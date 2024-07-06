@@ -1,11 +1,14 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Button } from "react-native";
+import { Link } from "expo-router";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Bay View High App</Text>
-      <Button title="Tap Me!" />
+      <Link href="/profile" style={{ color: "blue" }}>
+        Profile
+      </Link>
       <StatusBar style="auto" />
     </View>
   );
