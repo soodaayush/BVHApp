@@ -1,10 +1,23 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, ScrollView } from "react-native";
+import { StyleSheet, View, ScrollView } from "react-native";
 import { Link } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
+import { useEffect } from "react";
 
 import LinkButton from "../components/LinkButton";
 
+SplashScreen.preventAutoHideAsync();
+
 export default function App() {
+  useEffect(() => {
+    const hideSplashScreen = async () => {
+      await new Promise((resolve) => setTimeout(resolve, 3000));
+      await SplashScreen.hideAsync();
+    };
+
+    hideSplashScreen();
+  }, []);
+
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />

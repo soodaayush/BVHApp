@@ -1,5 +1,4 @@
 import { StyleSheet, Text, View, Image } from "react-native";
-import { Link } from "expo-router";
 
 const LinkButton = (props) => {
   return (
