@@ -1,17 +1,15 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
-import { useRouter, useSegments } from "expo-router";
+import { useRouter, usePathname } from "expo-router";
 
 const Header = () => {
   const router = useRouter();
-  const segments = useSegments();
+  const path = usePathname();
 
   function handleBackPress() {
     router.back();
   }
 
-  console.log(segments[0]);
-
-  const isHomeScreen = segments[0] === "index";
+  const isHomeScreen = path === "/";
 
   return (
     <View style={styles.container}>
