@@ -1,10 +1,25 @@
-import { StyleSheet, Text, View, Image } from "react-native";
-import React from "react";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
+import { useRouter, useSegments } from "expo-router";
 
 const Header = () => {
+  const router = useRouter();
+  const segments = useSegments();
+
+  function handleBackPress() {
+    router.back();
+  }
+
+  console.log(segments[0]);
+
+  const isHomeScreen = segments[0] === "index";
+
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require("../assets/arrow.png")} />
+      {!isHomeScreen && (
+        <TouchableOpacity onPress={handleBackPress}>
+          <Image style={styles.image} source={require("../assets/arrow.png")} />
+        </TouchableOpacity>
+      )}
       <Text>Bay View High School</Text>
       <Image style={styles.image} source={require("../assets/hamburger.png")} />
     </View>
