@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import { useRouter, usePathname } from "expo-router";
 
-const Header = () => {
+const Header = (props) => {
   const router = useRouter();
   const path = usePathname();
 
@@ -18,7 +18,7 @@ const Header = () => {
           <Image style={styles.image} source={require("../assets/arrow.png")} />
         </TouchableOpacity>
       )}
-      <Text>Bay View High School</Text>
+      <Text>{props.title}</Text>
       <Image style={styles.image} source={require("../assets/hamburger.png")} />
     </View>
   );
@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     backgroundColor: "#a1cff0",
+    textAlign: "center",
   },
   image: {
     height: 20,
