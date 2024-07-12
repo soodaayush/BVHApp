@@ -1,11 +1,26 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, Image, TouchableOpacity } from "react-native";
+import * as WebBrowser from "expo-web-browser";
+import { useRouter } from "expo-router";
 
 const LinkButton = (props) => {
+  const router = useRouter();
+
+  async function open() {
+    if (props.link) {
+      router.push(props.link);
+    }
+
+    if (props.url) {
+      const url = props.url;
+      let result = await WebBrowser.openBrowserAsync(url);
+    }
+  }
+
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={open}>
       <Image style={styles.image} source={props.source} />
       <Text style={styles.name}>{props.name}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 

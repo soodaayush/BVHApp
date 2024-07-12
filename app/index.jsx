@@ -26,12 +26,11 @@ export default function App() {
       <View style={styles.container}>
         <StatusBar style="auto" />
         <ScrollView contentContainerStyle={styles.links}>
-          <Link href="/news">
-            <LinkButton
-              source={require("../assets/adaptive-icon.png")}
-              name="News"
-            />
-          </Link>
+          <LinkButton
+            source={require("../assets/adaptive-icon.png")}
+            name="News"
+            link="/news"
+          />
           <LinkButton
             source={require("../assets/adaptive-icon.png")}
             name="Events"
@@ -47,6 +46,7 @@ export default function App() {
           <LinkButton
             source={require("../assets/adaptive-icon.png")}
             name="Guidance Counselling Office"
+            url="https://sites.google.com/gnspes.ca/sjaguidance/home"
           />
           <LinkButton
             source={require("../assets/adaptive-icon.png")}
@@ -99,7 +99,6 @@ const styles = StyleSheet.create({
     padding: 20,
     flex: 1,
     backgroundColor: "#fff",
-    fontFamily: "OpenSans-Regular",
   },
   links: {
     display: "flex",
