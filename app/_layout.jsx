@@ -1,8 +1,13 @@
-import { Stack } from "expo-router";
-import Header from "../components/Header";
+import { SplashScreen, Stack } from "expo-router";
+import { useEffect } from "react";
+import { useFonts } from "expo-font";
 import Footer from "../components/Footer";
 
 const RootLayout = () => {
+  const [fontsLoaded] = useFonts({
+    "OpenSans-Regular": require("../assets/Font/OpenSans-Regular.ttf"),
+  });
+
   return (
     <>
       <Stack>

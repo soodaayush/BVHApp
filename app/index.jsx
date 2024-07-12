@@ -3,6 +3,7 @@ import { StyleSheet, View, ScrollView } from "react-native";
 import { Link } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
+import { useFonts } from "expo-font";
 
 import Header from "../components/Header";
 import LinkButton from "../components/LinkButton";
@@ -98,6 +99,7 @@ const styles = StyleSheet.create({
     padding: 20,
     flex: 1,
     backgroundColor: "#fff",
+    fontFamily: "OpenSans-Regular",
   },
   links: {
     display: "flex",

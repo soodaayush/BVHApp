@@ -25,5 +25,6 @@ const styles = StyleSheet.create({
   },
   name: {
     textAlign: "center",
+    fontFamily: "OpenSans-Regular",
   },
 });

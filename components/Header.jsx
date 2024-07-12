@@ -18,7 +18,7 @@ const Header = (props) => {
           <Image style={styles.image} source={require("../assets/arrow.png")} />
         </TouchableOpacity>
       )}
-      <Text>{props.title}</Text>
+      <Text style={styles.text}>{props.title}</Text>
       <Image style={styles.image} source={require("../assets/hamburger.png")} />
     </View>
   );
@@ -38,6 +38,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#a1cff0",
     textAlign: "center",
+  },
+  text: {
+    fontFamily: "OpenSans-Regular",
   },
   image: {
     height: 20,

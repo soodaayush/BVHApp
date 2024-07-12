@@ -5,6 +5,7 @@ const NewsArticle = (props) => {
     <View style={styles.container}>
       <Text style={styles.title}>{props.title}</Text>
       <Text style={styles.content}>{props.content}</Text>
+      <Text style={styles.date}>{props.date}</Text>
     </View>
   );
 };
@@ -21,8 +22,15 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 25,
+    fontFamily: "OpenSans-Regular",
+    marginBottom: 10,
   },
   content: {
     fontSize: 15,
+    fontFamily: "OpenSans-Regular",
+    marginBottom: 10,
+  },
+  date: {
+    fontFamily: "OpenSans-Regular",
   },
 });
