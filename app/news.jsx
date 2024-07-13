@@ -33,7 +33,7 @@ const News = () => {
       <Header title="News" />
       <View style={styles.container}>
         <FlatList
-          data={newsArticles}
+          data={newsArticles.reverse()}
           renderItem={({ item }) => (
             <NewsArticle
               title={item.name}
@@ -41,7 +41,6 @@ const News = () => {
               date={item.date}
             />
           )}
-          inverted
         />
       </View>
     </>

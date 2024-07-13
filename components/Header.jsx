@@ -1,5 +1,7 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import { useRouter, usePathname } from "expo-router";
+import Arrow from "../assets/arrow.svg";
+import Hamburger from "../assets/hamburger.svg";
 
 const Header = (props) => {
   const router = useRouter();
@@ -15,11 +17,11 @@ const Header = (props) => {
     <View style={styles.container}>
       {!isHomeScreen && (
         <TouchableOpacity onPress={handleBackPress}>
-          <Image style={styles.image} source={require("../assets/arrow.png")} />
+          <Arrow style={styles.image} />
         </TouchableOpacity>
       )}
       <Text style={styles.text}>{props.title}</Text>
-      <Image style={styles.image} source={require("../assets/hamburger.png")} />
+      <Hamburger style={styles.image} />
     </View>
   );
 };
