@@ -19,18 +19,22 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginBottom: 20,
     borderRadius: 10,
+    borderColor: "#fff",
   },
   title: {
     fontSize: 25,
     fontFamily: "OpenSans-Regular",
     marginBottom: 10,
+    color: "#fff",
   },
   content: {
     fontSize: 15,
     fontFamily: "OpenSans-Regular",
     marginBottom: 10,
+    color: "#fff",
   },
   date: {
     fontFamily: "OpenSans-Regular",
+    color: "#fff",
   },
 });

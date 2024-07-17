@@ -1,12 +1,20 @@
-import { SplashScreen, Stack } from "expo-router";
-import { useEffect } from "react";
+import { Stack } from "expo-router";
 import { useFonts } from "expo-font";
 import Footer from "../components/Footer";
+import * as SplashScreen from "expo-splash-screen";
+
+SplashScreen.preventAutoHideAsync();
 
 const RootLayout = () => {
-  const [fontsLoaded] = useFonts({
+  let [fontsLoaded] = useFonts({
     "OpenSans-Regular": require("../assets/Font/OpenSans-Regular.ttf"),
   });
+
+  if (!fontsLoaded) {
+    return null;
+  } else {
+    SplashScreen.hideAsync();
+  }
 
   return (
     <>

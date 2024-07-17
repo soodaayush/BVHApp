@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: "#fff",
+    backgroundColor: "#121212",
     alignItems: "stretch",
     justifyContent: "flex-start",
     fontFamily: "OpenSans-Regular",
