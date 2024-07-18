@@ -3,6 +3,8 @@ import { useRouter, usePathname } from "expo-router";
 import Arrow from "../assets/arrow.svg";
 import Hamburger from "../assets/hamburger.svg";
 
+import Colors from "../constants/colors";
+
 const Header = (props) => {
   const router = useRouter();
   const path = usePathname();
@@ -38,7 +40,7 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     justifyContent: "space-between",
     alignItems: "center",
-    backgroundColor: "#4086c6",
+    backgroundColor: Colors.headerFooterBackground,
     textAlign: "center",
   },
   text: {

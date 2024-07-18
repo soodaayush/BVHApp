@@ -3,6 +3,8 @@ import { StyleSheet, View, ScrollView, FlatList } from "react-native";
 import Header from "../components/Header";
 import NewsArticle from "../components/NewsArticle";
 
+import Colors from "../constants/colors";
+
 const News = () => {
   const newsArticles = [
     {
@@ -53,7 +55,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: "#121212",
+    backgroundColor: Colors.backgroundDark,
     alignItems: "stretch",
     justifyContent: "flex-start",
     fontFamily: "OpenSans-Regular",

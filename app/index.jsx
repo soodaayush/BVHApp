@@ -1,12 +1,12 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View, ScrollView } from "react-native";
-import { Link } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
-import { useFonts } from "expo-font";
 
 import Header from "../components/Header";
 import LinkButton from "../components/LinkButton";
+
+import Colors from "../constants/colors";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -42,6 +42,7 @@ export default function App() {
           <LinkButton
             source={require("../assets/adaptive-icon.png")}
             name="Quick Links"
+            link="/quickLinks"
           />
           <LinkButton
             source={require("../assets/adaptive-icon.png")}
@@ -98,7 +99,7 @@ const styles = StyleSheet.create({
   container: {
     padding: 20,
     flex: 1,
-    backgroundColor: "#121212",
+    backgroundColor: Colors.backgroundDark,
   },
   links: {
     display: "flex",

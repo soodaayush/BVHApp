@@ -1,5 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 
+import Colors from "../constants/colors";
+
 const Footer = () => {
   return (
     <View style={styles.container}>
@@ -16,6 +18,6 @@ const styles = StyleSheet.create({
     paddingBottom: 30,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#4086c6",
+    backgroundColor: Colors.headerFooterBackground,
   },
 });

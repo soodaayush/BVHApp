@@ -1,5 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 
+import Colors from "../constants/colors";
+
 const NewsArticle = (props) => {
   return (
     <View style={styles.container}>
@@ -19,22 +21,22 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginBottom: 20,
     borderRadius: 10,
-    borderColor: "#fff",
+    borderColor: Colors.textDark,
   },
   title: {
     fontSize: 25,
     fontFamily: "OpenSans-Regular",
     marginBottom: 10,
-    color: "#fff",
+    color: Colors.textDark,
   },
   content: {
     fontSize: 15,
     fontFamily: "OpenSans-Regular",
     marginBottom: 10,
-    color: "#fff",
+    color: Colors.textDark,
   },
   date: {
     fontFamily: "OpenSans-Regular",
-    color: "#fff",
+    color: Colors.textDark,
   },
 });
