@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginBottom: 20,
     borderRadius: 10,
-    borderColor: Colors.textDark,
+    backgroundColor: Colors.contentBackgroundDark,
   },
   title: {
     fontSize: 25,
