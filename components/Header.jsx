@@ -1,5 +1,6 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { useRouter, usePathname } from "expo-router";
+
 import Arrow from "../assets/arrow.svg";
 import Hamburger from "../assets/hamburger.svg";
 

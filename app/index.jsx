@@ -6,6 +6,9 @@ import { useEffect } from "react";
 import Header from "../components/Header";
 import LinkButton from "../components/LinkButton";
 
+import News from "../assets/icons/news.svg";
+import Events from "../assets/icons/calendar.svg";
+
 import Colors from "../constants/colors";
 
 SplashScreen.preventAutoHideAsync();
@@ -30,10 +33,12 @@ export default function App() {
             source={require("../assets/adaptive-icon.png")}
             name="News"
             link="/news"
+            image={News}
           />
           <LinkButton
             source={require("../assets/adaptive-icon.png")}
             name="Events"
+            image={Events}
           />
           <LinkButton
             source={require("../assets/adaptive-icon.png")}
