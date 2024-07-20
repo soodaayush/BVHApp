@@ -8,6 +8,11 @@ import LinkButton from "../components/LinkButton";
 
 import News from "../assets/icons/news.svg";
 import Events from "../assets/icons/calendar.svg";
+import Directory from "../assets/icons/directory.svg";
+import QuickLinks from "../assets/icons/quickLinks.svg";
+import GuidanceCounsellingOffice from "../assets/icons/guidance-counselling-office.svg";
+import BellSchedule from "../assets/icons/bell-schedule.svg";
+import Athletics from "../assets/icons/athletics.svg";
 
 import Colors from "../constants/colors";
 
@@ -43,24 +48,29 @@ export default function App() {
           <LinkButton
             source={require("../assets/adaptive-icon.png")}
             name="Directory"
+            image={Directory}
           />
           <LinkButton
             source={require("../assets/adaptive-icon.png")}
             name="Quick Links"
             link="/quickLinks"
+            image={QuickLinks}
           />
           <LinkButton
             source={require("../assets/adaptive-icon.png")}
             name="Guidance Counselling Office"
             url="https://sites.google.com/gnspes.ca/sjaguidance/home"
+            image={GuidanceCounsellingOffice}
           />
           <LinkButton
             source={require("../assets/adaptive-icon.png")}
             name="Bell Schedule"
+            image={BellSchedule}
           />
           <LinkButton
             source={require("../assets/adaptive-icon.png")}
             name="Athletics"
+            image={Athletics}
           />
           <LinkButton
             source={require("../assets/adaptive-icon.png")}

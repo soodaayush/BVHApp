@@ -3,6 +3,11 @@ import { StyleSheet, View } from "react-native";
 import Header from "../components/Header";
 import QuickLink from "../components/quickLink";
 
+import PowerSchool from "../assets/quickLinkIcons/powerschool.svg";
+import Announcements from "../assets/quickLinkIcons/announcements.svg";
+import SchoolCashOnline from "../assets/quickLinkIcons/schoolcashonline.svg";
+import TechnologyHelpDesk from "../assets/quickLinkIcons/technology-help-desk.svg";
+
 import Colors from "../constants/colors";
 
 const QuickLinks = () => {
@@ -13,18 +18,22 @@ const QuickLinks = () => {
         <QuickLink
           title="PowerSchool"
           url="https://sishrsb.ednet.ns.ca/public/home.html"
+          image={PowerSchool}
         />
         <QuickLink
           title="Announcements"
           url="https://sites.google.com/gnspes.ca/bvhsannouncements/"
+          image={Announcements}
         />
         <QuickLink
           title="SchoolCashOnline"
           url="https://hrce.schoolcashonline.com/"
+          image={SchoolCashOnline}
         />
         <QuickLink
           title="Technology Help Desk"
           url="https://helpdesk.hrce.ca/TrackIt/SelfService/Account/LogIn"
+          image={TechnologyHelpDesk}
         />
       </View>
     </>

@@ -11,6 +11,9 @@ const QuickLink = (props) => {
 
   return (
     <TouchableOpacity style={styles.container} onPress={openURL}>
+      {props.image ? (
+        <props.image height={50} width={50} fill={Colors.textDark} />
+      ) : null}
       <Text style={styles.text}>{props.title}</Text>
     </TouchableOpacity>
   );
@@ -25,10 +28,14 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     borderRadius: 10,
     borderColor: Colors.textDark,
+    flexDirection: "row",
+    justifyContent: "start",
+    alignItems: "center",
     backgroundColor: Colors.contentBackgroundDark,
   },
   text: {
     color: Colors.textDark,
     fontFamily: "OpenSans-Regular",
+    marginLeft: 10,
   },
 });
