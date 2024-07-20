@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { useRouter, usePathname } from "expo-router";
 
-import Arrow from "../assets/arrow.svg";
-import Hamburger from "../assets/hamburger.svg";
+import Arrow from "../assets/header-icons/arrow.svg";
+import Hamburger from "../assets/header-icons/hamburger.svg";
 
 import Colors from "../constants/colors";
 

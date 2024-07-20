@@ -3,10 +3,10 @@ import { StyleSheet, View } from "react-native";
 import Header from "../components/Header";
 import QuickLink from "../components/quickLink";
 
-import PowerSchool from "../assets/quickLinkIcons/powerschool.svg";
-import Announcements from "../assets/quickLinkIcons/announcements.svg";
-import SchoolCashOnline from "../assets/quickLinkIcons/schoolcashonline.svg";
-import TechnologyHelpDesk from "../assets/quickLinkIcons/technology-help-desk.svg";
+import PowerSchool from "../assets/quick-links-icons/powerschool.svg";
+import Announcements from "../assets/quick-links-icons/announcements.svg";
+import SchoolCashOnline from "../assets/quick-links-icons/schoolcashonline.svg";
+import TechnologyHelpDesk from "../assets/quick-links-icons/technology-help-desk.svg";
 
 import Colors from "../constants/colors";
 

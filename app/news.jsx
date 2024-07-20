@@ -1,4 +1,4 @@
-import { StyleSheet, View, ScrollView, FlatList } from "react-native";
+import { StyleSheet, View, FlatList } from "react-native";
 
 import Header from "../components/Header";
 import NewsArticle from "../components/NewsArticle";

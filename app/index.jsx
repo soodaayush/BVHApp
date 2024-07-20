@@ -6,13 +6,21 @@ import { useEffect } from "react";
 import Header from "../components/Header";
 import LinkButton from "../components/LinkButton";
 
-import News from "../assets/icons/news.svg";
-import Events from "../assets/icons/calendar.svg";
-import Directory from "../assets/icons/directory.svg";
-import QuickLinks from "../assets/icons/quickLinks.svg";
-import GuidanceCounsellingOffice from "../assets/icons/guidance-counselling-office.svg";
-import BellSchedule from "../assets/icons/bell-schedule.svg";
-import Athletics from "../assets/icons/athletics.svg";
+import News from "../assets/home-icons/news.svg";
+import Events from "../assets/home-icons/calendar.svg";
+import Directory from "../assets/home-icons/directory.svg";
+import QuickLinks from "../assets/home-icons/quick-links.svg";
+import GuidanceCounsellingOffice from "../assets/home-icons/guidance-counselling-office.svg";
+import BellSchedule from "../assets/home-icons/bell-schedule.svg";
+import Athletics from "../assets/home-icons/athletics.svg";
+import Merchandise from "../assets/home-icons/merchandise.svg";
+import Photos from "../assets/home-icons/photos.svg";
+import YouthHealthCentre from "../assets/home-icons/youth-health-centre.svg";
+import ClubsAndCommittees from "../assets/home-icons/clubs-and-committees.svg";
+import SocialMedia from "../assets/home-icons/social-media.svg";
+import Tutoring from "../assets/home-icons/tutoring.svg";
+import AP from "../assets/home-icons/AP.svg";
+import O2 from "../assets/home-icons/O2.svg";
 
 import Colors from "../constants/colors";
 
@@ -34,76 +42,29 @@ export default function App() {
       <View style={styles.container}>
         <StatusBar style="auto" />
         <ScrollView contentContainerStyle={styles.links}>
+          <LinkButton name="News" link="/news" image={News} />
+          <LinkButton name="Events" image={Events} />
+          <LinkButton name="Directory" image={Directory} />
           <LinkButton
-            source={require("../assets/adaptive-icon.png")}
-            name="News"
-            link="/news"
-            image={News}
-          />
-          <LinkButton
-            source={require("../assets/adaptive-icon.png")}
-            name="Events"
-            image={Events}
-          />
-          <LinkButton
-            source={require("../assets/adaptive-icon.png")}
-            name="Directory"
-            image={Directory}
-          />
-          <LinkButton
-            source={require("../assets/adaptive-icon.png")}
             name="Quick Links"
             link="/quickLinks"
             image={QuickLinks}
           />
           <LinkButton
-            source={require("../assets/adaptive-icon.png")}
-            name="Guidance Counselling Office"
+            name="Guidance Counselling"
             url="https://sites.google.com/gnspes.ca/sjaguidance/home"
             image={GuidanceCounsellingOffice}
           />
-          <LinkButton
-            source={require("../assets/adaptive-icon.png")}
-            name="Bell Schedule"
-            image={BellSchedule}
-          />
-          <LinkButton
-            source={require("../assets/adaptive-icon.png")}
-            name="Athletics"
-            image={Athletics}
-          />
-          <LinkButton
-            source={require("../assets/adaptive-icon.png")}
-            name="Youth Health Centre"
-          />
-          <LinkButton
-            source={require("../assets/adaptive-icon.png")}
-            name="Merchandise"
-          />
-          <LinkButton
-            source={require("../assets/adaptive-icon.png")}
-            name="Photos"
-          />
-          <LinkButton
-            source={require("../assets/adaptive-icon.png")}
-            name="Clubs & Committees"
-          />
-          <LinkButton
-            source={require("../assets/adaptive-icon.png")}
-            name="Social Media"
-          />
-          <LinkButton
-            source={require("../assets/adaptive-icon.png")}
-            name="Tutoring"
-          />
-          <LinkButton
-            source={require("../assets/adaptive-icon.png")}
-            name="AP"
-          />
-          <LinkButton
-            source={require("../assets/adaptive-icon.png")}
-            name="O2"
-          />
+          <LinkButton name="Bell Schedule" image={BellSchedule} />
+          <LinkButton name="Athletics" image={Athletics} />
+          <LinkButton name="Youth Health Centre" image={YouthHealthCentre} />
+          <LinkButton name="Merchandise" image={Merchandise} />
+          <LinkButton name="Photos" image={Photos} />
+          <LinkButton name="Clubs & Committees" image={ClubsAndCommittees} />
+          <LinkButton name="Social Media" image={SocialMedia} />
+          <LinkButton name="Tutoring" image={Tutoring} />
+          <LinkButton name="AP" image={AP} />
+          <LinkButton name="O2" image={O2} />
         </ScrollView>
       </View>
     </>

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, Image, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import * as WebBrowser from "expo-web-browser";
 import { useRouter } from "expo-router";
 
@@ -20,11 +20,7 @@ const LinkButton = (props) => {
 
   return (
     <TouchableOpacity style={styles.container} onPress={open}>
-      {props.image ? (
-        <props.image height={50} width={50} fill={Colors.textDark} />
-      ) : (
-        <Image style={styles.image} source={props.source} />
-      )}
+      <props.image height={50} width={50} fill={Colors.textDark} />
       <Text style={styles.name}>{props.name}</Text>
     </TouchableOpacity>
   );

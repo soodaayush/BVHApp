@@ -11,9 +11,7 @@ const QuickLink = (props) => {
 
   return (
     <TouchableOpacity style={styles.container} onPress={openURL}>
-      {props.image ? (
-        <props.image height={50} width={50} fill={Colors.textDark} />
-      ) : null}
+      <props.image height={50} width={50} fill={Colors.textDark} />
       <Text style={styles.text}>{props.title}</Text>
     </TouchableOpacity>
   );
