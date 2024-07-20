@@ -25,18 +25,18 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 25,
-    fontFamily: "OpenSans-Regular",
+    fontFamily: Colors.fontFamily,
     marginBottom: 10,
     color: Colors.textDark,
   },
   content: {
     fontSize: 15,
-    fontFamily: "OpenSans-Regular",
+    fontFamily: Colors.fontFamily,
     marginBottom: 10,
     color: Colors.textDark,
   },
   date: {
-    fontFamily: "OpenSans-Regular",
+    fontFamily: Colors.fontFamily,
     color: Colors.textDark,
   },
 });

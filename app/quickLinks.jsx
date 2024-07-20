@@ -49,6 +49,6 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.backgroundDark,
     alignItems: "stretch",
     justifyContent: "flex-start",
-    fontFamily: "OpenSans-Regular",
+    fontFamily: Colors.fontFamily,
   },
 });

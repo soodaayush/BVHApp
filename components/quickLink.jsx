@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: Colors.textDark,
-    fontFamily: "OpenSans-Regular",
+    fontFamily: Colors.fontFamily,
     marginLeft: 10,
   },
 });

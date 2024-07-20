@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   text: {
-    fontFamily: "OpenSans-Regular",
+    fontFamily: Colors.fontFamily,
   },
   image: {
     height: 20,

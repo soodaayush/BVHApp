@@ -41,8 +41,9 @@ const styles = StyleSheet.create({
     width: 60,
   },
   name: {
+    marginTop: 5,
     textAlign: "center",
-    fontFamily: "OpenSans-Regular",
+    fontFamily: Colors.fontFamily,
     color: Colors.textDark,
   },
 });
