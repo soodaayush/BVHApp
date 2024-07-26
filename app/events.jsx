@@ -1,45 +1,43 @@
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
-import { useState, useEffect } from "react";
-import { Calendar, Agenda, AgendaList } from "react-native-calendars";
+import { useState } from "react";
+import { Agenda } from "react-native-calendars";
 
 import Header from "../components/Header";
 
 import Colors from "../constants/colors";
 
 const Events = () => {
-  const now = new Date();
-
-  const year = now.getFullYear();
-  const month = String(now.getMonth() + 1).padStart(2, "0");
-  const day = String(now.getDate()).padStart(2, "0");
-
-  const dateString = `${year}-${month}-${day}`;
-
   const [selectedDate, setSelectedDate] = useState(null);
 
   const events = {
     "2024-07-26": [
-      { name: "Prom", time: "8:00 PM", marked: true },
-      { name: "Something Else", time: "8:00 PM", marked: true },
+      { name: "Prom", time: "2024-07-26 - 8:00 PM", marked: true },
+      { name: "AfterParty", time: "2024-07-26 - 10:00 PM", marked: true },
     ],
-    "2024-07-27": [{ name: "Exams", time: "8:00 PM", marked: true }],
-    "2024-07-28": [{ name: "Graduation", time: "8:00 PM", marked: true }],
+    "2024-07-27": [
+      { name: "Exams", time: "2024-07-27 - 2:00 PM", marked: true },
+    ],
+    "2024-07-28": [
+      { name: "Graduation", time: "2024-07-28 -8:00 PM", marked: true },
+    ],
+    "2024-09-05": [
+      { name: "Schools Open!", time: "2024-09-05 -8:00 PM", marked: true },
+    ],
   };
 
   const renderItem = (item) => (
-    <View style={styles.item}>
-      <Text style={styles.itemText}>{item.name}</Text>
+    <TouchableOpacity style={styles.item}>
+      <Text style={styles.titleText}>{item.name}</Text>
       <Text style={styles.itemText}>{item.time}</Text>
-    </View>
+    </TouchableOpacity>
   );
 
   const renderEmptyDate = () => (
-    <View style={styles.item}>
-      <Text style={styles.itemText}>No Events</Text>
-    </View>
+    <TouchableOpacity style={styles.item}>
+      <Text style={styles.titleText}>No Events</Text>
+    </TouchableOpacity>
   );
 
-  // Get all dates with events for marking
   const markedDates = Object.keys(events).reduce((acc, date) => {
     acc[date] = { marked: true };
     return acc;
@@ -98,7 +96,7 @@ const styles = StyleSheet.create({
   },
   agendaWrapper: {
     flex: 1,
-    backgroundColor: "#000", // Background color for the Agenda itself
+    backgroundColor: "#000",
   },
   item: {
     backgroundColor: Colors.backgroundDark,
@@ -107,8 +105,14 @@ const styles = StyleSheet.create({
     marginRight: 15,
     marginTop: 32,
   },
+  titleText: {
+    fontSize: 20,
+    color: Colors.textDark,
+    fontFamily: Colors.fontFamily,
+  },
   itemText: {
     color: Colors.textDark,
+    fontFamily: Colors.fontFamily,
   },
   agenda: {
     backgroundColor: "#ccc",
