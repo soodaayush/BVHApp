@@ -43,7 +43,7 @@ export default function App() {
         <StatusBar style="auto" />
         <ScrollView contentContainerStyle={styles.links}>
           <LinkButton name="News" link="/news" image={News} />
-          <LinkButton name="Events" image={Events} />
+          <LinkButton name="Events" link="/events" image={Events} />
           <LinkButton name="Directory" image={Directory} />
           <LinkButton
             name="Quick Links"
@@ -63,8 +63,12 @@ export default function App() {
           <LinkButton name="Clubs & Committees" image={ClubsAndCommittees} />
           <LinkButton name="Social Media" image={SocialMedia} />
           <LinkButton name="Tutoring" image={Tutoring} />
-          <LinkButton name="AP" image={AP} />
-          <LinkButton name="O2" image={O2} />
+          <LinkButton name="AP" url="https://ap.collegeboard.org/" image={AP} />
+          <LinkButton
+            name="O2"
+            url="https://careerpathways.ednet.ns.ca/options-opportunities"
+            image={O2}
+          />
         </ScrollView>
       </View>
     </>
