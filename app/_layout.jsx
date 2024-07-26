@@ -23,6 +23,7 @@ const RootLayout = () => {
         <Stack.Screen name="news" options={{ headerShown: false }} />
         <Stack.Screen name="quickLinks" options={{ headerShown: false }} />
         <Stack.Screen name="events" options={{ headerShown: false }} />
+        <Stack.Screen name="map" options={{ headerShown: false }} />
       </Stack>
       <Footer />
     </>
