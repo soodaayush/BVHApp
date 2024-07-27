@@ -1,16 +1,34 @@
-import { StyleSheet, Text, View, Image } from "react-native";
-
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  TouchableOpacity,
+  Platform,
+} from "react-native";
 import MapView, { Marker } from "react-native-maps";
+import * as Linking from "expo-linking";
 
 import Header from "../components/Header";
 
 import Colors from "../constants/colors";
+
+import Directions from "../assets/map-icons/directions.svg";
 
 const Map = () => {
   const latitude = "44.699090200647994";
   const longitude = "-63.86441076531011";
   const latitudeDelta = 0.005;
   const longitudeDelta = 0.005;
+
+  function openMap() {
+    const url = Platform.select({
+      ios: `maps:0,0?q=${latitude},${longitude}&dirflg=d`,
+      android: `google.navigation:q=${latitude},${longitude}`,
+    });
+
+    Linking.openURL(url);
+  }
 
   return (
     <>
@@ -22,10 +40,13 @@ const Map = () => {
             source={require("../assets/branding/icon.png")}
           />
           <View style={styles.textContainer}>
-            <Text style={styles.text}>Bay View High School</Text>
-            <Text style={styles.text}>
+            <Text style={styles.school}>Bay View High School</Text>
+            <Text style={styles.address}>
               31 Scholars Rd, Upper Tantallon, NS B3Z 0C3
             </Text>
+            <TouchableOpacity onPress={openMap}>
+              <Directions style={styles.svg} fill={Colors.textDark} />
+            </TouchableOpacity>
           </View>
         </View>
         <MapView
@@ -64,21 +85,34 @@ const styles = StyleSheet.create({
   information: {
     flexDirection: "row",
     backgroundColor: Colors.backgroundDark,
-    justifyContent: "start",
+    justifyContent: "flex-start",
     alignItems: "center",
-    padding: 20,
+    padding: 10,
   },
   image: {
     height: 150,
     width: 150,
+    marginRight: 10,
+  },
+  svg: {
+    height: 30,
+    width: 30,
+    marginTop: 10,
   },
   textContainer: {
-    flexWrap: "wrap",
+    flex: 1,
   },
-  text: {
+  school: {
     color: Colors.textDark,
     fontFamily: Colors.fontFamily,
-    flexWrap: "wrap",
+    width: "100%",
+    fontSize: 20,
+    marginBottom: 10,
+  },
+  address: {
+    color: Colors.textDark,
+    fontFamily: Colors.fontFamily,
+    width: "100%",
   },
   map: {
     width: "100%",
