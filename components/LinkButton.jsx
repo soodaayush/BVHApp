@@ -20,7 +20,7 @@ const LinkButton = (props) => {
 
   return (
     <TouchableOpacity style={styles.container} onPress={open}>
-      <props.image height={50} width={50} fill={Colors.textDark} />
+      <props.image height={40} width={40} fill={Colors.textDark} />
       <Text style={styles.name}>{props.name}</Text>
     </TouchableOpacity>
   );

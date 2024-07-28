@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View, ScrollView } from "react-native";
+import { StyleSheet, View, ScrollView, Image } from "react-native";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 
@@ -39,36 +39,47 @@ export default function App() {
   return (
     <>
       <Header title="Bay View High School" />
+      <StatusBar style="auto" />
+
       <View style={styles.container}>
-        <StatusBar style="auto" />
-        <ScrollView contentContainerStyle={styles.links}>
-          <LinkButton name="News" link="/news" image={News} />
-          <LinkButton name="Events" link="/events" image={Events} />
-          <LinkButton name="Directory" image={Directory} />
-          <LinkButton
-            name="Quick Links"
-            link="/quickLinks"
-            image={QuickLinks}
+        <ScrollView>
+          <Image
+            style={styles.image}
+            source={require("../assets/home-icons/bvh-banner.png")}
           />
-          <LinkButton
-            name="Guidance Counselling"
-            url="https://sites.google.com/gnspes.ca/sjaguidance/home"
-            image={GuidanceCounsellingOffice}
-          />
-          <LinkButton name="Bell Schedule" image={BellSchedule} />
-          <LinkButton name="Athletics" image={Athletics} />
-          <LinkButton name="Youth Health Centre" image={YouthHealthCentre} />
-          <LinkButton name="Merchandise" image={Merchandise} />
-          <LinkButton name="Photos" image={Photos} />
-          <LinkButton name="Clubs & Committees" image={ClubsAndCommittees} />
-          <LinkButton name="Social Media" image={SocialMedia} />
-          <LinkButton name="Tutoring" image={Tutoring} />
-          <LinkButton name="AP" url="https://ap.collegeboard.org/" image={AP} />
-          <LinkButton
-            name="O2"
-            url="https://careerpathways.ednet.ns.ca/options-opportunities"
-            image={O2}
-          />
+          <View style={styles.links}>
+            <LinkButton name="News" link="/news" image={News} />
+            <LinkButton name="Events" link="/events" image={Events} />
+            <LinkButton name="Directory" image={Directory} />
+            <LinkButton
+              name="Quick Links"
+              link="/quickLinks"
+              image={QuickLinks}
+            />
+            <LinkButton
+              name="Guidance Counselling"
+              url="https://sites.google.com/gnspes.ca/sjaguidance/home"
+              image={GuidanceCounsellingOffice}
+            />
+            <LinkButton name="Bell Schedule" image={BellSchedule} />
+            <LinkButton name="Athletics" image={Athletics} />
+            <LinkButton name="Youth Health Centre" image={YouthHealthCentre} />
+            <LinkButton name="Merchandise" image={Merchandise} />
+            <LinkButton name="Photos" image={Photos} />
+            <LinkButton name="Clubs & Committees" image={ClubsAndCommittees} />
+            <LinkButton name="Social Media" image={SocialMedia} />
+            <LinkButton name="Tutoring" image={Tutoring} />
+            <LinkButton
+              name="AP"
+              url="https://ap.collegeboard.org/"
+              image={AP}
+            />
+            <LinkButton
+              name="O2"
+              url="https://careerpathways.ednet.ns.ca/options-opportunities"
+              image={O2}
+            />
+          </View>
         </ScrollView>
       </View>
     </>
@@ -77,7 +88,6 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
     flex: 1,
     backgroundColor: Colors.backgroundDark,
   },
@@ -88,6 +98,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexWrap: "wrap",
     gap: 20,
-    marginTop: 20,
+    marginTop: 40,
+  },
+  image: {
+    height: 200,
+    width: "100%",
   },
 });
