@@ -1,4 +1,3 @@
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View, ScrollView, Image } from "react-native";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
@@ -39,7 +38,6 @@ export default function App() {
   return (
     <>
       <Header title="Bay View High School" />
-      <StatusBar style="auto" />
 
       <View style={styles.container}>
         <ScrollView>

@@ -1,3 +1,4 @@
+import { StatusBar } from "expo-status-bar";
 import { Stack } from "expo-router";
 import { useFonts } from "expo-font";
 import Footer from "../components/Footer";
@@ -18,6 +19,7 @@ const RootLayout = () => {
 
   return (
     <>
+      <StatusBar style="light" />
       <Stack>
         <Stack.Screen name="index" options={{ headerShown: false }} />
         <Stack.Screen name="news" options={{ headerShown: false }} />

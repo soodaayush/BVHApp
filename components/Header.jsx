@@ -20,11 +20,11 @@ const Header = (props) => {
     <View style={styles.container}>
       {!isHomeScreen && (
         <TouchableOpacity onPress={handleBackPress}>
-          <Arrow style={styles.image} />
+          <Arrow style={styles.image} fill={Colors.textDark} />
         </TouchableOpacity>
       )}
       <Text style={styles.text}>{props.title}</Text>
-      <Hamburger style={styles.image} />
+      <Hamburger style={styles.image} fill={Colors.textDark} />
     </View>
   );
 };
@@ -41,11 +41,13 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     justifyContent: "space-between",
     alignItems: "center",
-    backgroundColor: Colors.headerFooterBackground,
+    backgroundColor: "#1B3C5F",
     textAlign: "center",
   },
   text: {
     fontFamily: Colors.fontFamily,
+    color: Colors.textDark,
+    fontSize: 15,
   },
   image: {
     height: 20,

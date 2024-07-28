@@ -25,13 +25,13 @@ const Footer = () => {
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={() => callPhoneNumber("(902) 826-3222")}>
-        <Phone style={styles.image} />
+        <Phone style={styles.image} fill={Colors.textDark} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => openURL("https://bvh.hrce.ca/")}>
-        <Website style={styles.image} />
+        <Website style={styles.image} fill={Colors.textDark} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => openMap()}>
-        <Map style={styles.image} />
+        <Map style={styles.image} fill={Colors.textDark} />
       </TouchableOpacity>
     </View>
   );
@@ -42,13 +42,15 @@ export default Footer;
 const styles = StyleSheet.create({
   container: {
     paddingBottom: 30,
+    borderTopWidth: 1,
+    borderTopColor: "#908EA5",
     paddingTop: 20,
     paddingRight: 60,
     paddingLeft: 60,
     justifyContent: "space-between",
     alignItems: "center",
     flexDirection: "row",
-    backgroundColor: Colors.headerFooterBackground,
+    backgroundColor: "#1B3C5F",
   },
   image: {
     height: 25,
