@@ -16,8 +16,8 @@ import Colors from "../constants/colors";
 import Directions from "../assets/map-icons/directions.svg";
 
 const Map = () => {
-  const latitude = "44.699090200647994";
-  const longitude = "-63.86441076531011";
+  const latitude = 44.699090200647994;
+  const longitude = -63.86441076531011;
   const latitudeDelta = 0.005;
   const longitudeDelta = 0.005;
 
