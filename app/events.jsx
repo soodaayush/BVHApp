@@ -18,10 +18,10 @@ const Events = () => {
       { name: "Exams", time: "2024-07-27 - 2:00 PM", marked: true },
     ],
     "2024-07-28": [
-      { name: "Graduation", time: "2024-07-28 -8:00 PM", marked: true },
+      { name: "Graduation", time: "2024-07-28 - 8:00 PM", marked: true },
     ],
     "2024-09-05": [
-      { name: "Schools Open!", time: "2024-09-05 -8:00 PM", marked: true },
+      { name: "Schools Open!", time: "2024-09-05 - 8:00 PM", marked: true },
     ],
   };
 
@@ -65,18 +65,18 @@ const Events = () => {
               agendaDayTextColor: "#000",
               agendaDayNumColor: "#000",
               agendaTodayColor: "#000",
-              agendaKnobColor: "#fff",
+              agendaKnobColor: Colors.textDark,
               backgroundColor: Colors.backgroundDark,
               calendarBackground: Colors.backgroundDark,
-              textSectionTitleColor: "#fff",
-              dayTextColor: "#fff",
-              monthTextColor: "#fff",
+              textSectionTitleColor: Colors.textDark,
+              dayTextColor: Colors.textDark,
+              monthTextColor: Colors.textDark,
               selectedDayBackgroundColor: "#a1cff0",
               selectedDayTextColor: Colors.textDark,
               todayTextColor: "#a1cff0",
               dotColor: "#a1cff0",
               selectedDotColor: Colors.backgroundDark,
-              agendaBackgroundColor: "#121212",
+              agendaBackgroundColor: Colors.contentBackgroundDark,
             }}
             style={styles.agenda}
           />
@@ -96,7 +96,6 @@ const styles = StyleSheet.create({
   },
   agendaWrapper: {
     flex: 1,
-    backgroundColor: "#000",
   },
   item: {
     backgroundColor: Colors.backgroundDark,
@@ -113,8 +112,5 @@ const styles = StyleSheet.create({
   itemText: {
     color: Colors.textDark,
     fontFamily: Colors.fontFamily,
-  },
-  agenda: {
-    backgroundColor: "#ccc",
   },
 });

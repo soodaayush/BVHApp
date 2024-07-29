@@ -35,6 +35,7 @@ const News = () => {
       <Header title="News" />
       <View style={styles.container}>
         <FlatList
+          contentContainerStyle={styles.articles}
           data={newsArticles.reverse()}
           renderItem={({ item }) => (
             <NewsArticle
@@ -54,11 +55,13 @@ export default News;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
     backgroundColor: Colors.backgroundDark,
+  },
+  articles: {
     alignItems: "stretch",
     justifyContent: "flex-start",
-    fontFamily: Colors.fontFamily,
+    alignItems: "center",
+    padding: 20,
   },
   news: {
     width: "100%",

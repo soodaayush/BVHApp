@@ -43,14 +43,14 @@ const styles = StyleSheet.create({
   container: {
     paddingBottom: 30,
     borderTopWidth: 1,
-    borderTopColor: "#908EA5",
+    borderTopColor: Colors.borderColor,
     paddingTop: 20,
     paddingRight: 60,
     paddingLeft: 60,
     justifyContent: "space-between",
     alignItems: "center",
     flexDirection: "row",
-    backgroundColor: "#1B3C5F",
+    backgroundColor: Colors.headerFooterBackground,
   },
   image: {
     height: 25,

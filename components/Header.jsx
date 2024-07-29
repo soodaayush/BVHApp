@@ -41,8 +41,10 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     justifyContent: "space-between",
     alignItems: "center",
-    backgroundColor: "#1B3C5F",
+    backgroundColor: Colors.headerFooterBackground,
     textAlign: "center",
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.borderColor,
   },
   text: {
     fontFamily: Colors.fontFamily,
