@@ -5,7 +5,7 @@ const Colors = {
   imageColor: "#a0d1f6",
   borderColor: "#908EA5",
   textDark: "#fff",
-  fontFamily: "OpenSans-Regular",
+  fontFamily: "Wotfard",
 };
 
 export default Colors;

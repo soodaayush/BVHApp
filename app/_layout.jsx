@@ -8,7 +8,7 @@ SplashScreen.preventAutoHideAsync();
 
 const RootLayout = () => {
   let [fontsLoaded] = useFonts({
-    "OpenSans-Regular": require("../assets/font/OpenSans-Regular.ttf"),
+    "Wotfard": require("../assets/font/Wotfard.ttf"),
   });
 
   if (!fontsLoaded) {
