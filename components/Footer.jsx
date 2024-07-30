@@ -1,7 +1,7 @@
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 import * as WebBrowser from "expo-web-browser";
 import * as Linking from "expo-linking";
-import { router } from "expo-router";
+import { useRouter, usePathname } from "expo-router";
 
 import Colors from "../constants/colors";
 
@@ -10,6 +10,9 @@ import Website from "../assets/footer-icons/website.svg";
 import Phone from "../assets/footer-icons/phone.svg";
 
 const Footer = () => {
+  const router = useRouter();
+  const path = usePathname();
+
   async function openURL(url) {
     let result = await WebBrowser.openBrowserAsync(url);
   }
@@ -19,7 +22,9 @@ const Footer = () => {
   }
 
   function openMap() {
-    router.push("/map");
+    if (path !== "/map") {
+      router.push("/map");
+    }
   }
 
   return (
