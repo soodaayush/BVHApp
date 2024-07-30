@@ -101,5 +101,7 @@ const styles = StyleSheet.create({
   image: {
     height: 200,
     width: "100%",
+    borderWidth: 2,
+    borderColor: Colors.borderColor,
   },
 });

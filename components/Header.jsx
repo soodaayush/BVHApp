@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   text: {
     fontFamily: Colors.fontFamily,
     color: Colors.textDark,
-    fontSize: 15,
+    fontSize: 18,
   },
   image: {
     height: 20,
