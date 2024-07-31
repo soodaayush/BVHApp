@@ -1,23 +1,17 @@
-import { StyleSheet, Text, TouchableOpacity } from "react-native";
-import * as WebBrowser from "expo-web-browser";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import React from "react";
 
 import Colors from "../constants/colors";
 
-const QuickLink = (props) => {
-  async function openURL() {
-    const url = props.url;
-    let result = await WebBrowser.openBrowserAsync(url);
-  }
-
+const DirectoryItem = (props) => {
   return (
-    <TouchableOpacity style={styles.container} onPress={openURL}>
-      <props.image height={50} width={50} fill={Colors.imageColor} />
-      <Text style={styles.text}>{props.title}</Text>
+    <TouchableOpacity style={styles.container}>
+      <Text style={styles.text}>{props.name}</Text>
     </TouchableOpacity>
   );
 };
 
-export default QuickLink;
+export default DirectoryItem;
 
 const styles = StyleSheet.create({
   container: {

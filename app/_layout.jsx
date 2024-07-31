@@ -8,7 +8,7 @@ SplashScreen.preventAutoHideAsync();
 
 const RootLayout = () => {
   let [fontsLoaded] = useFonts({
-    "Wotfard": require("../assets/font/Wotfard.ttf"),
+    Wotfard: require("../assets/font/Wotfard.ttf"),
   });
 
   if (!fontsLoaded) {
@@ -26,6 +26,7 @@ const RootLayout = () => {
         <Stack.Screen name="quickLinks" options={{ headerShown: false }} />
         <Stack.Screen name="events" options={{ headerShown: false }} />
         <Stack.Screen name="map" options={{ headerShown: false }} />
+        <Stack.Screen name="directory" options={{ headerShown: false }} />
       </Stack>
       <Footer />
     </>

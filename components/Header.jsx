@@ -1,5 +1,6 @@
-import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, Platform } from "react-native";
 import { useRouter, usePathname } from "expo-router";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 import Arrow from "../assets/header-icons/arrow.svg";
 import Hamburger from "../assets/header-icons/hamburger.svg";
@@ -17,7 +18,7 @@ const Header = (props) => {
   const isHomeScreen = path === "/";
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       {!isHomeScreen && (
         <TouchableOpacity onPress={handleBackPress}>
           <Arrow style={styles.image} fill={Colors.textDark} />
@@ -25,7 +26,7 @@ const Header = (props) => {
       )}
       <Text style={styles.text}>{props.title}</Text>
       <Hamburger style={styles.image} fill={Colors.textDark} />
-    </View>
+    </SafeAreaView>
   );
 };
 
@@ -35,8 +36,8 @@ const styles = StyleSheet.create({
   container: {
     display: "flex",
     flexDirection: "row",
-    paddingTop: 60,
-    paddingBottom: 30,
+    paddingTop: Platform.OS === "android" ? 0 : 10,
+    paddingBottom: Platform.OS === "android" ? 30 : 0,
     paddingRight: 20,
     paddingLeft: 20,
     justifyContent: "space-between",

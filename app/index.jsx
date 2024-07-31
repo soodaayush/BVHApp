@@ -38,7 +38,6 @@ export default function App() {
   return (
     <>
       <Header title="Bay View High School" />
-
       <View style={styles.container}>
         <ScrollView>
           <Image
@@ -48,7 +47,7 @@ export default function App() {
           <View style={styles.links}>
             <LinkButton name="News" link="/news" image={News} />
             <LinkButton name="Events" link="/events" image={Events} />
-            <LinkButton name="Directory" image={Directory} />
+            <LinkButton name="Directory" link="/directory" image={Directory} />
             <LinkButton
               name="Quick Links"
               link="/quickLinks"
