@@ -1,12 +1,16 @@
-import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
-import React from "react";
-
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import Colors from "../constants/colors";
+
+import Person from "../assets/directory-icons/person.svg";
 
 const DirectoryItem = (props) => {
   return (
     <TouchableOpacity style={styles.container}>
-      <Text style={styles.text}>{props.name}</Text>
+      <Person height={40} width={40} fill={Colors.imageColor} />
+      <View>
+        <Text style={styles.text}>{props.data.name}</Text>
+        <Text style={styles.text}>{props.data.role}</Text>
+      </View>
     </TouchableOpacity>
   );
 };

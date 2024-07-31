@@ -27,6 +27,10 @@ const RootLayout = () => {
         <Stack.Screen name="events" options={{ headerShown: false }} />
         <Stack.Screen name="map" options={{ headerShown: false }} />
         <Stack.Screen name="directory" options={{ headerShown: false }} />
+        <Stack.Screen
+          name="directoryCategory"
+          options={{ headerShown: false }}
+        />
       </Stack>
       <Footer />
     </>
