@@ -36,10 +36,6 @@ const styles = StyleSheet.create({
     height: 110,
     width: 110,
   },
-  image: {
-    height: 60,
-    width: 60,
-  },
   name: {
     marginTop: 5,
     textAlign: "center",

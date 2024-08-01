@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "date-fns": "^3.6.0",
     "expo": "~51.0.24",
     "expo-font": "12.0.9",
     "expo-linear-gradient": "~13.0.2",

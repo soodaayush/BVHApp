@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View, FlatList } from "react-native";
+import { StyleSheet, View, FlatList } from "react-native";
 import { useGlobalSearchParams } from "expo-router";
-import DirectoryThing from "../components/DirectoryThing";
 
 import Header from "../components/Header";
+import DirectoryItem from "../components/DirectoryItem";
 
 import Colors from "../constants/colors";
 
@@ -17,7 +17,7 @@ const DirectoryCategory = () => {
         <FlatList
           contentContainerStyle={styles.directory}
           data={parsedData}
-          renderItem={({ item }) => <DirectoryThing data={item} />}
+          renderItem={({ item }) => <DirectoryItem data={item} />}
         />
       </View>
     </>

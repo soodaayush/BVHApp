@@ -5,6 +5,7 @@ import QuickLink from "../components/quickLink";
 
 import PowerSchool from "../assets/quick-links-icons/powerschool.svg";
 import Announcements from "../assets/quick-links-icons/announcements.svg";
+import Library from "../assets/quick-links-icons/library.svg";
 import SchoolCashOnline from "../assets/quick-links-icons/schoolcashonline.svg";
 import TechnologyHelpDesk from "../assets/quick-links-icons/technology-help-desk.svg";
 
@@ -25,6 +26,11 @@ const QuickLinks = () => {
             title="Announcements"
             url="https://sites.google.com/gnspes.ca/bvhsannouncements/"
             image={Announcements}
+          />
+          <QuickLink
+            title="Library"
+            url="https://hrce.insigniails.com/Library/Home?LibraryID=0232&Language=English"
+            image={Library}
           />
           <QuickLink
             title="SchoolCashOnline"
