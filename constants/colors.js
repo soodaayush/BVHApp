@@ -5,6 +5,8 @@ const Colors = {
   imageColor: "#a0d1f6",
   borderColor: "#908EA5",
   textDark: "#fff",
+  calendarSelectedColor: "#a1cff0",
+  dateColor: "#FFFFE0",
   fontFamily: "Wotfard",
 };
 

@@ -5,8 +5,8 @@ import Colors from "../constants/colors";
 const CalenderEvent = (props) => {
   return (
     <TouchableOpacity style={styles.container}>
-      <Text style={styles.text}>{props.event.title}</Text>
-      <Text style={styles.text}>
+      <Text style={styles.title}>{props.event.title}</Text>
+      <Text style={styles.date}>
         {props.event.date} at {props.event.time}
       </Text>
     </TouchableOpacity>
@@ -26,7 +26,13 @@ const styles = StyleSheet.create({
     justifyContent: "start",
     backgroundColor: Colors.contentBackgroundDark,
   },
-  text: {
+  title: {
+    color: Colors.textDark,
+    fontFamily: Colors.fontFamily,
+    marginLeft: 10,
+    fontSize: 20,
+  },
+  date: {
     color: Colors.textDark,
     fontFamily: Colors.fontFamily,
     marginLeft: 10,
