@@ -37,6 +37,7 @@ const News = () => {
         <FlatList
           contentContainerStyle={styles.articles}
           data={newsArticles.reverse()}
+          keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
             <NewsArticle
               title={item.name}

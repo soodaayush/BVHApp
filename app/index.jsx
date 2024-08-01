@@ -67,12 +67,12 @@ export default function App() {
             <LinkButton name="Social Media" image={SocialMedia} />
             <LinkButton name="Tutoring" image={Tutoring} />
             <LinkButton
-              name="AP"
+              name="Advanced Placement"
               url="https://ap.collegeboard.org/"
               image={AP}
             />
             <LinkButton
-              name="O2"
+              name="Options & Opportunities"
               url="https://careerpathways.ednet.ns.ca/options-opportunities"
               image={O2}
             />

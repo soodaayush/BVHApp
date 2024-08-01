@@ -36,6 +36,6 @@ const styles = StyleSheet.create({
   },
   date: {
     fontFamily: Colors.fontFamily,
-    color: Colors.textDark,
+    color: "#FFFFE0",
   },
 });
