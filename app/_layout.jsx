@@ -32,6 +32,7 @@ const RootLayout = () => {
           name="directoryCategory"
           options={{ headerShown: false }}
         />
+        <Stack.Screen name="newsArticleInfo" options={{ headerShown: false }} />
       </Stack>
       <Footer />
     </>

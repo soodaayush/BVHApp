@@ -1,14 +1,34 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity } from "react-native";
+import { useRouter } from "expo-router";
 
 import Colors from "../constants/colors";
 
 const NewsArticle = (props) => {
+  const router = useRouter();
+
+  const getFirstXWords = (text, limit) => {
+    const words = text.split(" ");
+    if (words.length <= limit) return text;
+    return words.slice(0, limit).join(" ") + "...";
+  };
+
+  function showArticle() {
+    if (props.article) {
+      router.push({
+        pathname: "/newsArticleInfo",
+        params: { data: JSON.stringify(props.article) },
+      });
+    }
+  }
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>{props.title}</Text>
-      <Text style={styles.content}>{props.content}</Text>
-      <Text style={styles.date}>{props.date}</Text>
-    </View>
+    <TouchableOpacity style={styles.container} onPress={showArticle}>
+      <Text style={styles.title}>{props.article.title}</Text>
+      <Text style={styles.content}>
+        {getFirstXWords(props.article.content, 10)}
+      </Text>
+      <Text style={styles.date}>{props.article.date}</Text>
+    </TouchableOpacity>
   );
 };
 
@@ -16,7 +36,6 @@ export default NewsArticle;
 
 const styles = StyleSheet.create({
   container: {
-    width: "100%",
     padding: 20,
     marginBottom: 20,
     borderRadius: 10,
