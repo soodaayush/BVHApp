@@ -2,7 +2,7 @@ import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import * as WebBrowser from "expo-web-browser";
 import { useRouter } from "expo-router";
 
-import Colors from "../constants/colors";
+import Colors from "../../constants/colors";
 
 const LinkButton = (props) => {
   const router = useRouter();

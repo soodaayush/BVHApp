@@ -1,7 +1,7 @@
 import { StyleSheet, View, ScrollView } from "react-native";
 
-import Header from "../components/Header";
-import DirectoryCategoryLink from "../components/DirectoryCategoryLink";
+import Header from "../components/misc/Header";
+import DirectoryCategoryLink from "../components/directory/DirectoryCategoryLink";
 
 import Colors from "../constants/colors";
 

@@ -2,8 +2,8 @@ import { StyleSheet, View, ScrollView, Image } from "react-native";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 
-import Header from "../components/Header";
-import LinkButton from "../components/LinkButton";
+import Header from "../components/misc/Header";
+import LinkButton from "../components/home/LinkButton";
 
 import News from "../assets/home-icons/news.svg";
 import Events from "../assets/home-icons/calendar.svg";

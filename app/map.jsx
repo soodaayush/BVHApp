@@ -9,7 +9,7 @@ import {
 import MapView, { Marker } from "react-native-maps";
 import * as Linking from "expo-linking";
 
-import Header from "../components/Header";
+import Header from "../components/misc/Header";
 
 import Colors from "../constants/colors";
 

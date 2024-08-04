@@ -2,7 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { Stack } from "expo-router";
 import { useFonts } from "expo-font";
 
-import Footer from "../components/Footer";
+import Footer from "../components/misc/Footer";
 import * as SplashScreen from "expo-splash-screen";
 
 SplashScreen.preventAutoHideAsync();

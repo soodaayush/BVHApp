@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import { useRouter } from "expo-router";
 
-import Colors from "../constants/colors";
+import Colors from "../../constants/colors";
 
 const NewsArticle = (props) => {
   const router = useRouter();

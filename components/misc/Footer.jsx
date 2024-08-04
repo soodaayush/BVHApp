@@ -3,11 +3,11 @@ import * as WebBrowser from "expo-web-browser";
 import * as Linking from "expo-linking";
 import { useRouter, usePathname } from "expo-router";
 
-import Colors from "../constants/colors";
+import Colors from "../../constants/colors";
 
-import Map from "../assets/footer-icons/map.svg";
-import Website from "../assets/footer-icons/website.svg";
-import Phone from "../assets/footer-icons/phone.svg";
+import Map from "../../assets/footer-icons/map.svg";
+import Website from "../../assets/footer-icons/website.svg";
+import Phone from "../../assets/footer-icons/phone.svg";
 
 const Footer = () => {
   const router = useRouter();

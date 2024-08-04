@@ -2,8 +2,8 @@ import { StyleSheet, View, FlatList, Text } from "react-native";
 import { useState, useEffect } from "react";
 import CalendarPicker from "react-native-calendar-picker";
 
-import Header from "../components/Header";
-import CalenderEvent from "../components/calendarEvent";
+import Header from "../components/misc/Header";
+import CalenderEvent from "../components/events/calendarEvent";
 
 import Colors from "../constants/colors";
 

@@ -1,8 +1,8 @@
 import { StyleSheet, View, FlatList } from "react-native";
 import { parse, compareDesc } from "date-fns";
 
-import Header from "../components/Header";
-import NewsArticle from "../components/NewsArticle";
+import Header from "../components/misc/Header";
+import NewsArticle from "../components/news/NewsArticle";
 
 import Colors from "../constants/colors";
 

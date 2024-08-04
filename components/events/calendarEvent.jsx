@@ -1,6 +1,6 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
-import Colors from "../constants/colors";
+import Colors from "../../constants/colors";
 
 const CalenderEvent = (props) => {
   return (

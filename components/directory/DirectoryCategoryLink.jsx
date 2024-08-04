@@ -1,9 +1,9 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import { useRouter } from "expo-router";
 
-import Folder from "../assets/directory-icons/folder.svg";
+import Folder from "../../assets/directory-icons/folder.svg";
 
-import Colors from "../constants/colors";
+import Colors from "../../constants/colors";
 
 const DirectoryCategoryLink = (props) => {
   const router = useRouter();

@@ -1,7 +1,7 @@
 import { StyleSheet, Text, ScrollView, View } from "react-native";
 import { useGlobalSearchParams } from "expo-router";
 
-import Header from "../components/Header";
+import Header from "../components/misc/Header";
 
 import Colors from "../constants/colors";
 

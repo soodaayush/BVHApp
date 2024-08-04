@@ -1,8 +1,8 @@
 import { StyleSheet, View, FlatList } from "react-native";
 import { useGlobalSearchParams } from "expo-router";
 
-import Header from "../components/Header";
-import DirectoryItem from "../components/DirectoryItem";
+import Header from "../components/misc/Header";
+import DirectoryItem from "../components/directory/DirectoryItem";
 
 import Colors from "../constants/colors";
 

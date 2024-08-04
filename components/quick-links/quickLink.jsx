@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import * as WebBrowser from "expo-web-browser";
 
-import Colors from "../constants/colors";
+import Colors from "../../constants/colors";
 
 const QuickLink = (props) => {
   async function openURL() {

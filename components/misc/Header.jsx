@@ -12,14 +12,14 @@ import { useRouter, usePathname } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useState, useRef } from "react";
 
-import Arrow from "../assets/header-icons/arrow.svg";
-import Hamburger from "../assets/header-icons/hamburger.svg";
+import Arrow from "../../assets/header-icons/arrow.svg";
+import Hamburger from "../../assets/header-icons/hamburger.svg";
 
 import HamburgerMenu from "./hamburgerMenu";
 
-import Colors from "../constants/colors";
+import Colors from "../../constants/colors";
 
-const { width, height } = Dimensions.get("window"); // Get screen height
+const { width, height } = Dimensions.get("window");
 
 const Header = (props) => {
   const [hamburgerMenu, setHamburgerMenu] = useState(false);

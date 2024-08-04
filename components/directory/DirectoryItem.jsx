@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import Colors from "../constants/colors";
+import Colors from "../../constants/colors";
 
-import Person from "../assets/directory-icons/person.svg";
+import Person from "../../assets/directory-icons/person.svg";
 
 const DirectoryItem = (props) => {
   return (
