@@ -32,7 +32,7 @@ const Header = (props) => {
   }
 
   function toggleHamburgerMenu() {
-    // setHamburgerMenu(!hamburgerMenu);
+    setHamburgerMenu((prevState) => !prevState);
   }
 
   const isHomeScreen = path === "/";
@@ -45,18 +45,21 @@ const Header = (props) => {
         </TouchableOpacity>
       )}
       <Text style={styles.text}>{props.title}</Text>
-      <TouchableOpacity>
-        <Hamburger
-          style={styles.image}
-          fill={Colors.textDark}
-          onPress={toggleHamburgerMenu}
-        />
+      <TouchableOpacity onPress={toggleHamburgerMenu}>
+        <Hamburger style={styles.image} fill={Colors.textDark} />
       </TouchableOpacity>
-      {hamburgerMenu && (
-        <View style={styles.hamburgerMenu}>
-          <HamburgerMenu />
+      <Modal
+        visible={hamburgerMenu}
+        animationType="slide"
+        transparent={true}
+        onRequestClose={toggleHamburgerMenu}
+      >
+        <View style={styles.overlay}>
+          <View style={styles.hamburgerMenu}>
+            <HamburgerMenu closeMenu={toggleHamburgerMenu} />
+          </View>
         </View>
-      )}
+      </Modal>
     </SafeAreaView>
   );
 };
@@ -83,23 +86,20 @@ const styles = StyleSheet.create({
     color: Colors.textDark,
     fontSize: 18,
   },
+  overlay: {
+    flex: 1,
+    justifyContent: "flex-end",
+    alignItems: "flex-end",
+    backgroundColor: "rgba(0,0,0,0.5)",
+  },
   hamburgerMenu: {
-    position: "absolute",
-    top: 0,
-    right: 0,
-    height: height, // Full screen height
-    width: 300, // Adjust width as needed
-    backgroundColor: "white",
+    width: width * 0.7,
+    height: height,
     shadowColor: "#000",
     shadowOffset: { width: -1, height: 0 },
     shadowOpacity: 0.2,
     shadowRadius: 4,
     elevation: 5,
-    zIndex: 2, // Ensure menu is above other components
-  },
-  menuContent: {
-    flex: 1,
-    padding: 20,
   },
   image: {
     height: 20,
