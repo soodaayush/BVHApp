@@ -1,6 +1,6 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
-import Colors from "../../constants/colors";
+import Constants from "../../constants/constants";
 
 const CalenderEvent = (props) => {
   return (
@@ -21,20 +21,20 @@ const styles = StyleSheet.create({
     padding: 20,
     marginBottom: 20,
     borderRadius: 10,
-    borderColor: Colors.textDark,
+    borderColor: Constants.textDark,
     flexDirection: "column",
     justifyContent: "start",
-    backgroundColor: Colors.contentBackgroundDark,
+    backgroundColor: Constants.contentBackgroundDark,
   },
   title: {
-    color: Colors.textDark,
-    fontFamily: Colors.fontFamily,
+    color: Constants.textDark,
+    fontFamily: Constants.fontFamily,
     marginLeft: 10,
     fontSize: 20,
   },
   date: {
-    color: Colors.textDark,
-    fontFamily: Colors.fontFamily,
+    color: Constants.textDark,
+    fontFamily: Constants.fontFamily,
     marginLeft: 10,
     fontSize: 16,
   },

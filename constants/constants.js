@@ -1,4 +1,4 @@
-const Colors = {
+const Constants = {
   backgroundDark: "#1B3C5F",
   headerFooterBackground: "#111F34",
   contentBackgroundDark: "#3A5A7F",
@@ -10,4 +10,4 @@ const Colors = {
   fontFamily: "Wotfard",
 };
 
-export default Colors;
+export default Constants;

@@ -9,7 +9,7 @@ import Library from "../assets/quick-links-icons/library.svg";
 import SchoolCashOnline from "../assets/quick-links-icons/schoolcashonline.svg";
 import TechnologyHelpDesk from "../assets/quick-links-icons/technology-help-desk.svg";
 
-import Colors from "../constants/colors";
+import Constants from "../constants/constants";
 
 const QuickLinks = () => {
   return (
@@ -53,7 +53,7 @@ export default QuickLinks;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.backgroundDark,
+    backgroundColor: Constants.backgroundDark,
   },
   link: {
     alignItems: "stretch",

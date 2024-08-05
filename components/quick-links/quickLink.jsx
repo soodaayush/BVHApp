@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import * as WebBrowser from "expo-web-browser";
 
-import Colors from "../../constants/colors";
+import Constants from "../../constants/constants";
 
 const QuickLink = (props) => {
   async function openURL() {
@@ -11,7 +11,7 @@ const QuickLink = (props) => {
 
   return (
     <TouchableOpacity style={styles.container} onPress={openURL}>
-      <props.image height={50} width={50} fill={Colors.imageColor} />
+      <props.image height={40} width={40} fill={Constants.imageColor} />
       <Text style={styles.text}>{props.title}</Text>
     </TouchableOpacity>
   );
@@ -25,15 +25,15 @@ const styles = StyleSheet.create({
     padding: 20,
     marginBottom: 20,
     borderRadius: 10,
-    borderColor: Colors.textDark,
+    borderColor: Constants.textDark,
     flexDirection: "row",
     justifyContent: "start",
     alignItems: "center",
-    backgroundColor: Colors.contentBackgroundDark,
+    backgroundColor: Constants.contentBackgroundDark,
   },
   text: {
-    color: Colors.textDark,
-    fontFamily: Colors.fontFamily,
+    color: Constants.textDark,
+    fontFamily: Constants.fontFamily,
     marginLeft: 10,
     fontSize: 16,
   },

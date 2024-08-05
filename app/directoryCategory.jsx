@@ -4,7 +4,7 @@ import { useGlobalSearchParams } from "expo-router";
 import Header from "../components/misc/Header";
 import DirectoryItem from "../components/directory/DirectoryItem";
 
-import Colors from "../constants/colors";
+import Constants from "../constants/constants";
 
 const DirectoryCategory = () => {
   const { data, name } = useGlobalSearchParams();
@@ -29,7 +29,7 @@ export default DirectoryCategory;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.backgroundDark,
+    backgroundColor: Constants.backgroundDark,
   },
   directory: {
     alignItems: "stretch",

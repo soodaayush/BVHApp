@@ -2,7 +2,7 @@ import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import * as WebBrowser from "expo-web-browser";
 import { useRouter, usePathname } from "expo-router";
 
-import Colors from "../../constants/colors";
+import Constants from "../../constants/constants";
 
 const HamburgerLink = (props) => {
   const router = useRouter();
@@ -23,7 +23,7 @@ const HamburgerLink = (props) => {
 
   return (
     <TouchableOpacity style={styles.container} onPress={open}>
-      <props.image height={40} width={40} fill={Colors.imageColor} />
+      <props.image height={40} width={40} fill={Constants.imageColor} />
       <Text style={styles.name}>{props.name}</Text>
     </TouchableOpacity>
   );
@@ -36,16 +36,19 @@ const styles = StyleSheet.create({
     width: "100%",
     marginBottom: 20,
     borderRadius: 10,
-    borderColor: Colors.textDark,
+    borderColor: Constants.textDark,
     flexDirection: "row",
     justifyContent: "start",
     alignItems: "center",
+    width: 160,
   },
   name: {
+    flex: 1,
     marginLeft: 10,
-    textAlign: "center",
-    fontFamily: Colors.fontFamily,
-    color: Colors.textDark,
+    textAlign: "left",
+    fontFamily: Constants.fontFamily,
+    color: Constants.textDark,
     fontSize: 16,
+    flexWrap: "wrap",
   },
 });

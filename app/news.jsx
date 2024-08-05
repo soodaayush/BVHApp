@@ -4,7 +4,7 @@ import { parse, compareDesc } from "date-fns";
 import Header from "../components/misc/Header";
 import NewsArticle from "../components/news/NewsArticle";
 
-import Colors from "../constants/colors";
+import Constants from "../constants/constants";
 
 const News = () => {
   let newsArticles = [
@@ -61,7 +61,7 @@ export default News;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.backgroundDark,
+    backgroundColor: Constants.backgroundDark,
   },
   articles: {
     alignItems: "stretch",

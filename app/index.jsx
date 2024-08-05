@@ -21,7 +21,7 @@ import Tutoring from "../assets/home-icons/tutoring.svg";
 import AP from "../assets/home-icons/AP.svg";
 import O2 from "../assets/home-icons/O2.svg";
 
-import Colors from "../constants/colors";
+import Constants from "../constants/constants";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -86,7 +86,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.backgroundDark,
+    backgroundColor: Constants.backgroundDark,
   },
   links: {
     display: "flex",
@@ -101,6 +101,6 @@ const styles = StyleSheet.create({
     height: 200,
     width: "100%",
     borderWidth: 2,
-    borderColor: Colors.borderColor,
+    borderColor: Constants.borderColor,
   },
 });

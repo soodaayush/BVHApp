@@ -1,4 +1,5 @@
 import { StyleSheet, View, ScrollView, TouchableOpacity } from "react-native";
+import { useRouter, usePathname } from "expo-router";
 
 import HamburgerLink from "./HamburgerLink";
 
@@ -22,19 +23,30 @@ import Tutoring from "../../assets/home-icons/tutoring.svg";
 import AP from "../../assets/home-icons/AP.svg";
 import O2 from "../../assets/home-icons/O2.svg";
 
-import Colors from "../../constants/colors";
+import Constants from "../../constants/constants";
 
 const HamburgerMenu = (props) => {
+  const router = useRouter();
+  const path = usePathname();
+
+  function goHome() {
+    if (path !== "/") {
+      router.push("/");
+    }
+
+    props.closeMenu();
+  }
+
   return (
     <View style={styles.container}>
       <ScrollView>
         <View style={styles.hamburgerHeader}>
           <View style={{ flexDirection: "row" }}>
-            <TouchableOpacity onPress={props.closeMenu}>
+            <TouchableOpacity onPress={goHome}>
               <Home
                 height={40}
                 width={40}
-                fill={Colors.textDark}
+                fill={Constants.textDark}
                 style={{ marginRight: 10 }}
               />
             </TouchableOpacity>
@@ -42,7 +54,7 @@ const HamburgerMenu = (props) => {
               <Settings
                 height={40}
                 width={40}
-                fill={Colors.textDark}
+                fill={Constants.textDark}
                 style={{ marginRight: 10 }}
               />
             </TouchableOpacity>
@@ -52,7 +64,7 @@ const HamburgerMenu = (props) => {
               <Close
                 height={40}
                 width={40}
-                fill={Colors.textDark}
+                fill={Constants.textDark}
                 style={{ marginRight: 10 }}
               />
             </TouchableOpacity>
@@ -151,14 +163,14 @@ export default HamburgerMenu;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: Colors.backgroundDark,
+    backgroundColor: Constants.backgroundDark,
     flex: 1,
   },
   hamburgerHeader: {
     flexDirection: "row",
     justifyContent: "space-between",
     borderBottomWidth: 1,
-    borderBottomColor: Colors.borderColor,
+    borderBottomColor: Constants.borderColor,
     paddingTop: 45,
     padding: 20,
   },

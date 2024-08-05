@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import { useRouter } from "expo-router";
 
-import Colors from "../../constants/colors";
+import Constants from "../../constants/constants";
 
 const NewsArticle = (props) => {
   const router = useRouter();
@@ -39,22 +39,22 @@ const styles = StyleSheet.create({
     padding: 20,
     marginBottom: 20,
     borderRadius: 10,
-    backgroundColor: Colors.contentBackgroundDark,
+    backgroundColor: Constants.contentBackgroundDark,
   },
   title: {
     fontSize: 25,
-    fontFamily: Colors.fontFamily,
+    fontFamily: Constants.fontFamily,
     marginBottom: 10,
-    color: Colors.textDark,
+    color: Constants.textDark,
   },
   content: {
     fontSize: 15,
-    fontFamily: Colors.fontFamily,
+    fontFamily: Constants.fontFamily,
     marginBottom: 10,
-    color: Colors.textDark,
+    color: Constants.textDark,
   },
   date: {
-    fontFamily: Colors.fontFamily,
-    color: Colors.dateColor,
+    fontFamily: Constants.fontFamily,
+    color: Constants.dateColor,
   },
 });

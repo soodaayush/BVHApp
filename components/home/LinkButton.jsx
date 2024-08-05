@@ -2,7 +2,7 @@ import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import * as WebBrowser from "expo-web-browser";
 import { useRouter } from "expo-router";
 
-import Colors from "../../constants/colors";
+import Constants from "../../constants/constants";
 
 const LinkButton = (props) => {
   const router = useRouter();
@@ -20,7 +20,7 @@ const LinkButton = (props) => {
 
   return (
     <TouchableOpacity style={styles.container} onPress={open}>
-      <props.image height={40} width={40} fill={Colors.imageColor} />
+      <props.image height={40} width={40} fill={Constants.imageColor} />
       <Text style={styles.name}>{props.name}</Text>
     </TouchableOpacity>
   );
@@ -39,8 +39,8 @@ const styles = StyleSheet.create({
   name: {
     marginTop: 5,
     textAlign: "center",
-    fontFamily: Colors.fontFamily,
-    color: Colors.textDark,
+    fontFamily: Constants.fontFamily,
+    color: Constants.textDark,
     fontSize: 16,
   },
 });

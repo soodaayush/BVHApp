@@ -3,7 +3,7 @@ import { useGlobalSearchParams } from "expo-router";
 
 import Header from "../components/misc/Header";
 
-import Colors from "../constants/colors";
+import Constants from "../constants/constants";
 
 const NewsArticleInfo = () => {
   const { data } = useGlobalSearchParams();
@@ -28,25 +28,25 @@ export default NewsArticleInfo;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.backgroundDark,
+    backgroundColor: Constants.backgroundDark,
   },
   article: {
     padding: 20,
   },
   title: {
     fontSize: 25,
-    fontFamily: Colors.fontFamily,
+    fontFamily: Constants.fontFamily,
     marginBottom: 10,
-    color: Colors.textDark,
+    color: Constants.textDark,
   },
   content: {
     fontSize: 15,
-    fontFamily: Colors.fontFamily,
+    fontFamily: Constants.fontFamily,
     marginBottom: 10,
-    color: Colors.textDark,
+    color: Constants.textDark,
   },
   date: {
-    fontFamily: Colors.fontFamily,
-    color: Colors.dateColor,
+    fontFamily: Constants.fontFamily,
+    color: Constants.dateColor,
   },
 });

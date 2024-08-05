@@ -5,19 +5,18 @@ import {
   Platform,
   Modal,
   View,
-  Animated,
   Dimensions,
 } from "react-native";
 import { useRouter, usePathname } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 import Arrow from "../../assets/header-icons/arrow.svg";
 import Hamburger from "../../assets/header-icons/hamburger.svg";
 
-import HamburgerMenu from "./hamburgerMenu";
+import HamburgerMenu from "./HamburgerMenu";
 
-import Colors from "../../constants/colors";
+import Constants from "../../constants/constants";
 
 const { width, height } = Dimensions.get("window");
 
@@ -41,12 +40,12 @@ const Header = (props) => {
     <SafeAreaView style={styles.container}>
       {!isHomeScreen && (
         <TouchableOpacity onPress={handleBackPress}>
-          <Arrow style={styles.image} fill={Colors.textDark} />
+          <Arrow style={styles.image} fill={Constants.textDark} />
         </TouchableOpacity>
       )}
       <Text style={styles.text}>{props.title}</Text>
       <TouchableOpacity onPress={toggleHamburgerMenu}>
-        <Hamburger style={styles.image} fill={Colors.textDark} />
+        <Hamburger style={styles.image} fill={Constants.textDark} />
       </TouchableOpacity>
       <Modal
         visible={hamburgerMenu}
@@ -76,14 +75,14 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     justifyContent: "space-between",
     alignItems: "center",
-    backgroundColor: Colors.headerFooterBackground,
+    backgroundColor: Constants.headerFooterBackground,
     textAlign: "center",
     borderBottomWidth: 1,
-    borderBottomColor: Colors.borderColor,
+    borderBottomColor: Constants.borderColor,
   },
   text: {
-    fontFamily: Colors.fontFamily,
-    color: Colors.textDark,
+    fontFamily: Constants.fontFamily,
+    color: Constants.textDark,
     fontSize: 18,
   },
   overlay: {

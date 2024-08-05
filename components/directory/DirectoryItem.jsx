@@ -1,12 +1,12 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import Colors from "../../constants/colors";
+import Constants from "../../constants/constants";
 
 import Person from "../../assets/directory-icons/person.svg";
 
 const DirectoryItem = (props) => {
   return (
     <TouchableOpacity style={styles.container}>
-      <Person height={40} width={40} fill={Colors.imageColor} />
+      <Person height={40} width={40} fill={Constants.imageColor} />
       <View>
         <Text style={styles.text}>{props.data.name}</Text>
         <Text style={styles.text}>{props.data.role}</Text>
@@ -23,15 +23,15 @@ const styles = StyleSheet.create({
     padding: 20,
     marginBottom: 20,
     borderRadius: 10,
-    borderColor: Colors.textDark,
+    borderColor: Constants.textDark,
     flexDirection: "row",
     justifyContent: "start",
     alignItems: "center",
-    backgroundColor: Colors.contentBackgroundDark,
+    backgroundColor: Constants.contentBackgroundDark,
   },
   text: {
-    color: Colors.textDark,
-    fontFamily: Colors.fontFamily,
+    color: Constants.textDark,
+    fontFamily: Constants.fontFamily,
     marginLeft: 10,
     fontSize: 16,
   },

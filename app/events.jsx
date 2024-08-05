@@ -5,7 +5,7 @@ import CalendarPicker from "react-native-calendar-picker";
 import Header from "../components/misc/Header";
 import CalenderEvent from "../components/events/calendarEvent";
 
-import Colors from "../constants/colors";
+import Constants from "../constants/constants";
 
 const Events = () => {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -77,8 +77,8 @@ const Events = () => {
     const formattedDate = date.toISOString().split("T")[0];
     return eventDates.has(formattedDate)
       ? {
-          style: { backgroundColor: Colors.borderColor },
-          textStyle: { color: Colors.textDark },
+          style: { backgroundColor: Constants.borderColor },
+          textStyle: { color: Constants.textDark },
         }
       : {};
   };
@@ -104,8 +104,8 @@ const Events = () => {
             previousTitleStyle={styles.text}
             nextTitleStyle={styles.text}
             yearTitleStyle={styles.text}
-            todayBackgroundColor={Colors.headerFooterBackground}
-            selectedDayColor={Colors.calendarSelectedColor}
+            todayBackgroundColor={Constants.headerFooterBackground}
+            selectedDayColor={Constants.calendarSelectedColor}
             customDatesStyles={customDatesStyles}
           />
           {selectedDate && (
@@ -136,22 +136,22 @@ const styles = StyleSheet.create({
   container: {
     padding: 20,
     flex: 1,
-    backgroundColor: Colors.backgroundDark,
+    backgroundColor: Constants.backgroundDark,
   },
   text: {
-    fontFamily: Colors.fontFamily,
-    color: Colors.textDark,
+    fontFamily: Constants.fontFamily,
+    color: Constants.textDark,
   },
   events: {
     marginTop: 20,
   },
   noEventsText: {
-    color: Colors.textDark,
+    color: Constants.textDark,
     fontSize: 16,
     textAlign: "center",
     marginTop: 20,
   },
   border: {
-    borderColor: Colors.textDark,
+    borderColor: Constants.textDark,
   },
 });

@@ -11,7 +11,7 @@ import * as Linking from "expo-linking";
 
 import Header from "../components/misc/Header";
 
-import Colors from "../constants/colors";
+import Constants from "../constants/constants";
 
 import Directions from "../assets/map-icons/directions.svg";
 
@@ -45,7 +45,7 @@ const Map = () => {
               31 Scholars Rd, Upper Tantallon, NS B3Z 0C3
             </Text>
             <TouchableOpacity onPress={openMap}>
-              <Directions style={styles.svg} fill={Colors.textDark} />
+              <Directions style={styles.svg} fill={Constants.textDark} />
             </TouchableOpacity>
           </View>
         </View>
@@ -80,11 +80,11 @@ export default Map;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.backgroundDark,
+    backgroundColor: Constants.backgroundDark,
   },
   information: {
     flexDirection: "row",
-    backgroundColor: Colors.backgroundDark,
+    backgroundColor: Constants.backgroundDark,
     justifyContent: "flex-start",
     alignItems: "center",
     padding: 10,
@@ -103,15 +103,15 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   school: {
-    color: Colors.textDark,
-    fontFamily: Colors.fontFamily,
+    color: Constants.textDark,
+    fontFamily: Constants.fontFamily,
     width: "100%",
     fontSize: 20,
     marginBottom: 10,
   },
   address: {
-    color: Colors.textDark,
-    fontFamily: Colors.fontFamily,
+    color: Constants.textDark,
+    fontFamily: Constants.fontFamily,
     width: "100%",
   },
   map: {
