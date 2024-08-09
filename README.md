@@ -1,6 +1,6 @@
 # Bay View High School App
 
-![icon](https://github.com/user-attachments/assets/ba52829b-bef1-447d-a818-59f689c1ceb3)
+![icon](https://github.com/user-attachments/assets/6276f451-5f02-4fda-b51a-5cf6a0cecaee)
 
 ## Inspiration
 
