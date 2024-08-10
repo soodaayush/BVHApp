@@ -111,3 +111,19 @@ The Components (path: `components`) folder contains all of the components used i
 # Constants
 
 The Constants (path: `constants`) folder contains the `constants.js` file. The file is composed of an object containing common styles (colors and fonts), so that colors can be referred from this file instead of a hard-coded hex code. If a color is changed in this file, it changes everywhere on the mobile app.
+
+# .Gitignore
+
+A file that communicates to Git the files it should ignore and not send to GitHub.
+
+# App.json
+
+Basic information about the mobile app, along with some configurations and required plugins.
+
+# Configs
+
+`babel.config.js` and `metro.config.js` are config files.
+
+# Package.json and Package-lock.json
+
+Files that list all of the packages/libraries used in this mobile app.
