@@ -106,4 +106,8 @@ The Components (path: `components`) folder contains all of the components used i
 - `news`: Components used in the News screen
   - `NewsArticle.jsx`: Used in the News screen, displays the shortened version of the news article, where the title, shortened description, and date are shown
 - `quick-links`:
-  - `QuickLink.jsx`: Used in the Quick Links screen, displays the quick link, which consists of an image and title    
+  - `QuickLink.jsx`: Used in the Quick Links screen, displays the quick link, which consists of an image and title
+
+# Constants
+
+The Constants (path: `constants`) folder contains the `constants.js` file. The file is composed of an object containing common styles (colors and fonts), so that colors can be referred from this file instead of a hard-coded hex code. If a color is changed in this file, it changes everywhere on the mobile app.
