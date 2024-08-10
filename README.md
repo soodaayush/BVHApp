@@ -20,6 +20,8 @@ This app provides access to news articles, a calendar of events, a staff directo
 
 # Screens
 
+These are all the main screens of the app. Even though there are more links on the home screen than the number of screens below, the rest of the links lead to an external website.
+
 ## Layout
 
 Although this is not a defined screen within the app, the Layout (path: `app/layout.jsx`) file sets the layout for every screen to copy from. It contains the Header at the top and the Footer at the bottom. In the middle are defined routes to all of the screens within the app.
@@ -84,3 +86,24 @@ The Assets (path: `assets`) folder contains all of the images used in the mobile
 - `home-icons`: Icons used in the Home screen
 - `map-icons`: Icons used in the Map screen
 - `quick-links-icons`: Icons used in the Quick Links screen
+
+# Components
+
+The Components (path: `components`) folder contains all of the components used in the mobile app.
+
+- `directory`: Components in the Directory screens
+  - `DirectoryCategoryLink.jsx`: Used in the Directory screen, links to the subdirectory
+  - `DirectoryItem.jsx`: Used in the Directory Category screen, where the name and role of the staff is listed
+- `events`: Components in the Events screen
+  - `CalendarEvent.jsx`: Used in the Events screen, displays events and their titles, dates, and times
+- `home`: Components in the Home screen
+  - `LinkButton.jsx`: Used in the Home screen, displays links to other screens/websites of the mobile app 
+- `misc`: Components used in multiple areas of the mobile app
+  - `Footer.jsx`: Displayed on all screens of the app at the bottom, shows a link to the school's phone number, website, and map
+  - `HamburgerLink.jsx`: A link to a screen/website on the hamburger menu
+  - `HamburgerMenu.jsx`: Displayed on the header, it is a hamburger menu
+  - `Header.jsx`: Displayed on all screens of the app at the top, is a header of the mobile app, where the title and hamburger menu is displayed
+- `news`: Components used in the News screen
+  - `NewsArticle.jsx`: Used in the News screen, displays the shortened version of the news article, where the title, shortened description, and date are shown
+- `quick-links`:
+  - `QuickLink.jsx`: Used in the Quick Links screen, displays the quick link, which consists of an image and title    
