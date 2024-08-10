@@ -102,7 +102,7 @@ The Components (path: `components`) folder contains all of the components used i
   - `Footer.jsx`: Displayed on all screens of the app at the bottom, shows a link to the school's phone number, website, and map
   - `HamburgerLink.jsx`: A link to a screen/website on the hamburger menu
   - `HamburgerMenu.jsx`: Displayed on the header, it is a hamburger menu
-  - `Header.jsx`: Displayed on all screens of the app at the top, is a header of the mobile app, where the title and hamburger menu are displayed.
+  - `Header.jsx`: Displayed on all screens of the app at the top, is a header of the mobile app, where the title and hamburger menu are displayed
 - `news`: Components used in the News screen
   - `NewsArticle.jsx`: Used in the News screen, displays the shortened version of the news article, where the title, shortened description, and date are shown
 - `quick-links`:
