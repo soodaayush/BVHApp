@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import CalendarPicker from "react-native-calendar-picker";
 
 import Header from "../components/misc/Header";
-import CalenderEvent from "../components/events/calendarEvent";
+import CalenderEvent from "../components/events/CalendarEvent";
 
 import Constants from "../constants/constants";
 

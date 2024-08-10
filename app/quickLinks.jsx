@@ -1,7 +1,7 @@
 import { StyleSheet, View, ScrollView } from "react-native";
 
 import Header from "../components/misc/Header";
-import QuickLink from "../components/quick-links/quickLink";
+import QuickLink from "../components/quick-links/QuickLink";
 
 import PowerSchool from "../assets/quick-links-icons/powerschool.svg";
 import Announcements from "../assets/quick-links-icons/announcements.svg";
