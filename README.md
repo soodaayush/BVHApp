@@ -4,6 +4,12 @@
 
 ![icon](https://github.com/user-attachments/assets/6276f451-5f02-4fda-b51a-5cf6a0cecaee)
 
+## Running the App
+
+- `npm install` to install all dependencies
+- `npm start` to start up the app
+- When the app is started, hit `i` to launch an iOS emulator, or `a` to launch an Android emulator
+
 ## Inspiration
 
 I noticed that students at Bay View High often miss important information because announcements are only made over the intercom. To address this, I decided to create a mobile app that could help improve communication.
@@ -99,7 +105,7 @@ The Components (path: `components`) folder contains all of the components used i
 - `events`: Components in the Events screen
   - `CalendarEvent.jsx`: Used in the Events screen, displays events and their titles, dates, and times
 - `home`: Components in the Home screen
-  - `LinkButton.jsx`: Used in the Home screen, displays links to other screens/websites of the mobile app 
+  - `LinkButton.jsx`: Used in the Home screen, displays links to other screens/websites of the mobile app
 - `misc`: Components used in multiple areas of the mobile app
   - `Footer.jsx`: Displayed on all screens of the app at the bottom, shows a link to the school's phone number, website, and map
   - `HamburgerLink.jsx`: A link to a screen/website on the hamburger menu
