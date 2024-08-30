@@ -1,6 +1,6 @@
 # Bay View High School App
 
-**Video Demo: https://www.youtube.com/watch?v=BFU6RQcBPIc**
+**Video Demo (submitted this as a final project for Harvard's CS50x): https://www.youtube.com/watch?v=BFU6RQcBPIc**
 
 ![icon](https://github.com/user-attachments/assets/6276f451-5f02-4fda-b51a-5cf6a0cecaee)
 
