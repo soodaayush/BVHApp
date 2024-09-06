@@ -8,7 +8,7 @@
 
 - `npm install` to install all dependencies
 - `npm start` to start up the app
-- When the app is started, hit `i` to launch an iOS emulator, or `a` to launch an Android emulator
+- When the app is started, hit `i` to launch an iOS emulator via XCode, or `a` to launch an Android emulator via Android Studio
 
 ## Inspiration
 
