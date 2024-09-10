@@ -64,7 +64,11 @@ export default function App() {
             <LinkButton name="Merchandise" image={Merchandise} />
             <LinkButton name="Photos" image={Photos} />
             <LinkButton name="Clubs & Committees" image={ClubsAndCommittees} />
-            <LinkButton name="Social Media" image={SocialMedia} />
+            <LinkButton
+              name="Social Media"
+              url="https://linktr.ee/bvhsstudentcouncil"
+              image={SocialMedia}
+            />
             <LinkButton name="Tutoring" image={Tutoring} />
             <LinkButton
               name="Advanced Placement"
