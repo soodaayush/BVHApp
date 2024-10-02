@@ -120,7 +120,7 @@ The Components (path: `components`) folder contains all of the components used i
 
 The Constants (path: `constants`) folder contains the `constants.js` file. The file is composed of an object containing common styles (colors and fonts), so that colors can be referred from this file instead of a hard-coded hex code. If a color is changed in this file, it changes everywhere on the mobile app.
 
-# .Gitignore
+# .GitIgnore
 
 A file that communicates to Git the files it should ignore and not send to GitHub.
 
