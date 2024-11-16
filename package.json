@@ -36,5 +36,6 @@
   "plugins": [
     "expo-router"
   ],
-  "private": true
+  "private": true,
+  "packageManager": "yarn@4.5.1"
 }
