@@ -2,6 +2,7 @@
   "expo": {
     "name": "BVHApp",
     "slug": "BVHApp",
+    "newArchEnabled": true,
     "scheme": "com.bvh.bvhapp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,9 +22,6 @@
         "backgroundColor": "#ffffff"
       }
     },
-    "plugins": [
-      "expo-font",
-      "expo-router"
-    ]
+    "plugins": ["expo-font", "expo-router"]
   }
 }
