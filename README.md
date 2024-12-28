@@ -6,9 +6,9 @@
 
 ## Running the App
 
-- `npm install` to install all dependencies
-- `npm start` to start up the app
-- When the app is started, hit `i` to launch an iOS emulator via XCode, or `a` to launch an Android emulator via Android Studio
+- `npm install` to install all dependencies.
+- `npm start` to start up the app.
+- When the app is started, hit `i` to launch an iOS emulator via XCode, or `a` to launch an Android emulator via Android Studio.
 
 ## Inspiration
 
@@ -86,35 +86,35 @@ The Maps (path: `app/map.jsx`) screen renders a map of the school using the `rea
 
 The Assets (path: `assets`) folder contains all of the images used in the mobile app. Most images used in this mobile app are SVGs (Scalable Vector Graphics), which are high quality images that are very small in file size.
 
-- `branding`: Used for branding images
-- `directory-icons`: Icons used in the Directory screens
-- `font`: The folder where the font (Wotfard) of the app is stored
-- `footer-icons`: Icons used in the Footer component
-- `header-icons`: Icons used in the Header component
-- `home-icons`: Icons used in the Home screen
-- `map-icons`: Icons used in the Map screen
-- `quick-links-icons`: Icons used in the Quick Links screen
+- `branding`: Used for branding images.
+- `directory-icons`: Icons used in the Directory screens.
+- `font`: The folder where the font (Wotfard) of the app is stored.
+- `footer-icons`: Icons used in the Footer component.
+- `header-icons`: Icons used in the Header component.
+- `home-icons`: Icons used in the Home screen.
+- `map-icons`: Icons used in the Map screen.
+- `quick-links-icons`: Icons used in the Quick Links screen.
 
 # Components
 
 The Components (path: `components`) folder contains all of the components used in the mobile app.
 
-- `directory`: Components in the Directory screens
-  - `DirectoryCategoryLink.jsx`: Used in the Directory screen, links to the subdirectory
-  - `DirectoryItem.jsx`: Used in the Directory Category screen, where the name and role of the staff is listed
-- `events`: Components in the Events screen
-  - `CalendarEvent.jsx`: Used in the Events screen, displays events and their titles, dates, and times
-- `home`: Components in the Home screen
-  - `LinkButton.jsx`: Used in the Home screen, displays links to other screens/websites of the mobile app
-- `misc`: Components used in multiple areas of the mobile app
-  - `Footer.jsx`: Displayed on all screens of the app at the bottom, shows a link to the school's phone number, website, and map
-  - `HamburgerLink.jsx`: A link to a screen/website on the hamburger menu
-  - `HamburgerMenu.jsx`: Displayed on the header, it is a hamburger menu
-  - `Header.jsx`: Displayed on all screens of the app at the top, is a header of the mobile app, where the title and hamburger menu are displayed
-- `news`: Components used in the News screen
-  - `NewsArticle.jsx`: Used in the News screen, displays the shortened version of the news article, where the title, shortened description, and date are shown
+- `directory`: Components in the Directory screens.
+  - `DirectoryCategoryLink.jsx`: Used in the Directory screen, links to the subdirectory.
+  - `DirectoryItem.jsx`: Used in the Directory Category screen, where the name and role of the staff is listed.
+- `events`: Components in the Events screen.
+  - `CalendarEvent.jsx`: Used in the Events screen, displays events and their titles, dates, and times.
+- `home`: Components in the Home screen.
+  - `LinkButton.jsx`: Used in the Home screen, displays links to other screens/websites of the mobile app.
+- `misc`: Components used in multiple areas of the mobile app.
+  - `Footer.jsx`: Displayed on all screens of the app at the bottom, shows a link to the school's phone number, website, and map.
+  - `HamburgerLink.jsx`: A link to a screen/website on the hamburger menu.
+  - `HamburgerMenu.jsx`: Displayed on the header, it is a hamburger menu.
+  - `Header.jsx`: Displayed on all screens of the app at the top, is a header of the mobile app, where the title and hamburger menu are displayed.
+- `news`: Components used in the News screen.
+  - `NewsArticle.jsx`: Used in the News screen, displays the shortened version of the news article, where the title, shortened description, and date are shown.
 - `quick-links`:
-  - `QuickLink.jsx`: Used in the Quick Links screen, displays the quick link, which consists of an image and title
+  - `QuickLink.jsx`: Used in the Quick Links screen, displays the quick link, which consists of an image and title.
 
 # Constants
 
