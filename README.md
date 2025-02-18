@@ -7,8 +7,8 @@
 ## Running the App
 
 - `npm install` to install all dependencies.
-- `npm start` to start up the app.
-- When the app is started, hit `i` to launch an iOS emulator via XCode, or `a` to launch an Android emulator via Android Studio.
+- `npm start` to launch the app.
+- When the app is launched, hit `i` to launch an iOS emulator via XCode, or `a` to launch an Android emulator via Android Studio.
 
 ## Inspiration
 
@@ -28,7 +28,7 @@ This app provides access to news articles, a calendar of events, a staff directo
 
 # Screens
 
-These are all the main screens of the app. Even though there are more links on the home screen than the number of screens below, the rest of the links lead to an external website.
+These are all the main screens of the app. Although there are more links on the home screen than the number of screens below, the rest of the links lead to an external website.
 
 ## Layout
 
@@ -56,7 +56,7 @@ The News Article (path: `app/newsArticleInfo.jsx`) screen displays the full text
 
 ![Events](https://github.com/user-attachments/assets/190abfe9-e302-4df4-8431-f7d8429fea92)
 
-The Events (path: `app/events.jsx`) screen contains a calendar using the `react-native-calendar-picker` package. If there are events on a given date, they would be highlighted with a grey tint (e.g., August 27). When tapping on the date, the number's tint changes to blue, and you can see the events listed for that day below. Each event is fetched from a JSON object. The events rendered below use the `CalendarEvent` (path: `components/events/CalendarEvent.jsx`) component, where the event name, date, and time are passed in to be rendered. Since we are using a JSON object, a `FlatList` was used to render all of the events on a given day.
+The Events (path: `app/events.jsx`) screen contains a calendar using the `react-native-calendar-picker` package. If there are events on a given date, they would be highlighted with a grey tint (e.g., August 27). When tapping on the date, the number's tint changes to blue, and you can see the events listed for that day below. Each event is fetched from a JSON object at the moment, until a database is established. The events rendered below use the `CalendarEvent` (path: `components/events/CalendarEvent.jsx`) component, where the event name, date, and time are passed in to be rendered. Since we are using a JSON object, a `FlatList` was used to render all of the events on a given day.
 
 ## Directory
 
@@ -80,7 +80,7 @@ The Quick Links (path: `app/quickLinks.jsx`) screen renders important links that
 
 ![Map](https://github.com/user-attachments/assets/651b1797-e16a-4b8a-ba80-ead2223a68ac)
 
-The Maps (path: `app/map.jsx`) screen renders a map of the school using the `react-native-maps` library. The latitude and longitude are passed into the map in order for it to be geolocated. For it to work on both iOS and Android, I explicitly provided Google and Apple maps links that are dependant on which Operating System is being used. Above the map is very basic information on the location of the school. The arrow icon below the information opens up the directions to the school from your location on your default maps app on your mobile device. There is a marker on the school to make it obvious as to what is the subject on this map.
+The Maps (path: `app/map.jsx`) screen renders a map of the school using the `react-native-maps` library. The latitude and longitude are passed into the map in order for it to be geolocated. For it to work on both iOS and Android, Google and Apple maps links are explicitly provided that are dependant on which Operating System is being used. Above the map is very basic information on the location of the school. The arrow icon below the information opens up the directions to the school from your location on your default maps app on your mobile device. There is a marker on the school to make it obvious as to what is the subject on this map.
 
 # Assets
 
