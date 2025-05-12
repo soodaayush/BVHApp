@@ -2,7 +2,7 @@
 
 **Video Demo (submitted this as a final project for Harvard's CS50x): https://www.youtube.com/watch?v=BFU6RQcBPIc**
 
-![icon](https://github.com/user-attachments/assets/6276f451-5f02-4fda-b51a-5cf6a0cecaee)
+![BVHS Mobile App](https://github.com/user-attachments/assets/660a93f6-ed6a-4db9-82d0-5242198283a9)
 
 ## Running the App
 
