@@ -22,6 +22,10 @@
         "backgroundColor": "#ffffff"
       }
     },
-    "plugins": ["expo-font", "expo-router"]
+    "plugins": [
+      "expo-font",
+      "expo-router",
+      "expo-web-browser"
+    ]
   }
 }

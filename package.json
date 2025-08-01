@@ -11,31 +11,31 @@
   "dependencies": {
     "@react-navigation/drawer": "^7.0.0",
     "date-fns": "^3.6.0",
-    "expo": "~52.0.46",
-    "expo-font": "~13.0.4",
-    "expo-linear-gradient": "~14.0.2",
-    "expo-linking": "~7.0.5",
-    "expo-router": "~4.0.21",
-    "expo-splash-screen": "~0.29.24",
-    "expo-status-bar": "~2.0.1",
-    "expo-web-browser": "~14.0.2",
-    "react": "18.3.1",
-    "react-native": "0.76.9",
+    "expo": "^53.0.0",
+    "expo-font": "~13.3.2",
+    "expo-linear-gradient": "~14.1.5",
+    "expo-linking": "~7.1.7",
+    "expo-router": "~5.1.4",
+    "expo-splash-screen": "~0.30.10",
+    "expo-status-bar": "~2.2.3",
+    "expo-web-browser": "~14.2.0",
+    "react": "19.0.0",
+    "react-native": "0.79.5",
     "react-native-calendar-picker": "^8.0.5",
-    "react-native-gesture-handler": "~2.20.2",
-    "react-native-maps": "1.18.0",
-    "react-native-reanimated": "~3.16.1",
-    "react-native-safe-area-context": "4.12.0",
-    "react-native-screens": "~4.4.0",
-    "react-native-svg": "15.8.0"
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-maps": "1.20.1",
+    "react-native-reanimated": "~3.17.4",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screens": "~4.11.1",
+    "react-native-svg": "15.11.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
-    "react-native-svg-transformer": "^1.5.0"
+    "react-native-svg-transformer": "^1.5.1"
   },
   "plugins": [
     "expo-router"
   ],
   "private": true,
-  "packageManager": "yarn@4.9.1"
+  "packageManager": "yarn@4.9.2"
 }
