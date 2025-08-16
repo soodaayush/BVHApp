@@ -12,7 +12,7 @@
 
 ## Inspiration
 
-I noticed that students at Bay View High often miss important information because announcements are only made over the intercom. To address this, I decided to create a mobile app that could help improve communication.
+I noticed that students at Bay View High often miss important information because announcements are only made over the intercom. To address this, I decided to create a mobile app that could help improve communication by providing a all-in-one hub for information.
 
 ## Challenges
 
@@ -20,7 +20,7 @@ I faced challenges in reacquainting myself with the processes involved in develo
 
 ## Lessons Learned
 
-I gained valuable experience in designing a user-friendly interface and organizing school-related information effectively.
+I gained valuable experience in designing a user-friendly interface for students and organizing school-related information effectively to make the app easy to use.
 
 ## The Mobile App
 
@@ -122,7 +122,7 @@ The Constants (path: `constants`) folder contains the `constants.js` file. The f
 
 # .GitIgnore
 
-A file that communicates to Git the files it should ignore and not send to GitHub.
+A file that communicates to Git (version control software) the files it should ignore and not send to GitHub.
 
 # App.json
 
@@ -134,4 +134,4 @@ Basic information about the mobile app, along with some configurations and requi
 
 # Package.json and Package-lock.json
 
-Files that list all of the packages/libraries used in this mobile app.
+Files that list all of the packages/libraries used in this mobile app along with their corresponding versions and dependencies.
