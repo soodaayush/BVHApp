@@ -2,7 +2,6 @@
   "expo": {
     "name": "BVHApp",
     "slug": "BVHApp",
-    "newArchEnabled": true,
     "scheme": "com.bvh.bvhapp",
     "version": "1.0.0",
     "orientation": "portrait",
